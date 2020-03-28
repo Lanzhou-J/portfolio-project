@@ -14,7 +14,12 @@ body nav {
   font-size: 18px;
   display: flex;
   align-items: center;
+  background: white;
   height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 body nav .linkwrapper {
   margin-left: 15px;
@@ -44,7 +49,7 @@ body .title_pics {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 110px;
   margin-bottom: 40px;
 }
 body .title_grid {
@@ -84,7 +89,6 @@ body .title_pic2:hover {
   background: linear-gradient(rgba(0, 0, 0, 0) 65%, white), url(docs/IMG_2001.PNG);
   background-position: center;
   background-size: cover;
-  filter: grayscale(2%);
 }
 body .title_subtitle {
   width: 100%;
@@ -127,8 +131,12 @@ body .introwrapper .intro {
   font-family: "Open Sans Condensed", sans-serif;
 }
 body .introwrapper .intropic {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 350px;
+  width: 350px;
+  align-self: flex-start;
+  margin-left: 100px;
 }
 body .introwrapper .intropic embed {
   width: 300px;
