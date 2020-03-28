@@ -7,14 +7,29 @@
 body {
   font-size: 25px;
   color: black;
-  background-color: white;
+  background-color: #fdfdfd;
   font-family: Arial, Helvetica, sans-serif;
+}
+body #body {
+  height: 64px;
+  width: 100%;
+  padding-right: 16px;
+  margin-left: -8px;
+  margin-top: -8px;
+  transition: left 1.2s ease;
+  background: inherit;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  z-index: 999;
 }
 body nav {
   font-size: 18px;
   display: flex;
   align-items: center;
-  background: white;
+  background: rgba(253, 253, 253, 0.45);
   height: 70px;
   position: fixed;
   top: 0;
@@ -29,8 +44,16 @@ body nav .linkwrapper a {
   text-decoration: none;
   color: gray;
   border-right: solid gray thin;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: background 0.4s, text-shadow 0.4s;
+  cursor: pointer;
+}
+body nav .linkwrapper a:hover {
+  background: rgba(253, 253, 253, 0.3);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
 body nav .linkwrapper .blog {
   border-right: none;
@@ -41,9 +64,13 @@ body nav .middlespan {
 body nav button {
   font-size: 15px;
   background-color: white;
-  margin-right: 15px;
+  margin-right: 30px;
+  margin-left: 15px;
   padding: 3px 8px 3px 8px;
   background-color: lightgray;
+}
+body nav button:hover {
+  background-color: #fdfdfd;
 }
 body .title_pics {
   display: flex;
@@ -108,12 +135,14 @@ body .title_subtitle .title_text h1 {
   font-size: 50px;
   font-family: "Open Sans Condensed", sans-serif;
   width: 100%;
+  color: #3f3f3f;
 }
 body .title_subtitle .title_text h2 {
   text-align: left;
   font-size: 40px;
   font-family: "Open Sans Condensed", sans-serif;
   width: 100%;
+  color: #3f3f3f;
 }
 body .introwrapper {
   height: 800px;
@@ -137,6 +166,33 @@ body .introwrapper .intropic {
   width: 350px;
   align-self: flex-start;
   margin-left: 100px;
+  display: flex;
+  align-items: center;
+}
+body .introwrapper .intropic .arrow-right {
+  box-sizing: content-box;
+  height: 0px;
+  width: 0px;
+  margin-left: 50px;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid black;
+}
+body .introwrapper .intropic .bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-25px);
+  }
+  60% {
+    transform: translateX(-15px);
+  }
 }
 body .introwrapper .intropic embed {
   width: 300px;

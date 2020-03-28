@@ -7,19 +7,37 @@
 body {
   font-size: 25px;
   color: black;
-  background-color: white;
+  background-color: rgb(253, 253, 253);
   font-family: Arial, Helvetica, sans-serif;
+
+  #body {
+    height: 64px;
+    width: 100%;
+    padding-right: 16px;
+    margin-left: -8px;
+    margin-top: -8px;
+    transition: left 1.2s ease;
+    background: inherit;
+    // filter frosted glass
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    z-index: 999;
+  }
 
   nav {
     font-size: 18px;
     display: flex;
     align-items: center;
-    background: white;
+    background: rgba(253, 253, 253, 0.45);
     height: 70px;
     position: fixed; 
     top: 0; 
     width: 100%;
     z-index: 2;
+
 
     .linkwrapper {
       margin-left: 15px;
@@ -28,9 +46,19 @@ body {
         text-decoration: none;
         color: gray;
         border-right: solid gray thin;
-        padding-right:10px;
-        padding-left: 10px;
+        padding-right:20px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        transition: background 0.4s, text-shadow 0.4s;
+        cursor: pointer;
         }
+
+      // navigation hover effect
+      a:hover {
+        background: rgba(253,253,253, 0.3);
+        text-shadow: 0 1px 5px rgba(0,0,0,0.15);
+      }
 
       .blog {
           border-right: none;
@@ -44,9 +72,14 @@ body {
     button {
       font-size: 15px;
       background-color: white;
-      margin-right: 15px;
+      margin-right: 30px;
+      margin-left: 15px;
       padding: 3px 8px 3px 8px;
       background-color: lightgray;
+    }
+
+    button:hover {
+      background-color: rgb(253, 253, 253);
     }
   }
 
@@ -133,6 +166,7 @@ body {
         // font-family: 'Raleway', sans-serif;
         font-family: 'Open Sans Condensed', sans-serif;
         width: 100%;
+        color: rgb(63, 63, 63)
         // background-color: cornsilk;
       }
 
@@ -144,6 +178,7 @@ body {
         // font-family: 'Raleway', sans-serif;
         font-family: 'Open Sans Condensed', sans-serif;
         width: 100%;
+        color:rgb(63, 63, 63)
         // background-color: silver;
 
       }
@@ -174,9 +209,38 @@ body {
     margin-bottom: 50px;
     height: 350px;
     width: 350px;
-    // background-color: thistle;
     align-self: flex-start;
     margin-left: 100px;
+    display: flex;
+    align-items: center;;
+
+    .arrow-right {
+      box-sizing: content-box;
+      height: 0px;
+      width: 0px;
+      margin-left: 50px;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 15px solid black;
+    }
+
+    .bounce {
+      -moz-animation: bounce 2s infinite;
+      -webkit-animation: bounce 2s infinite;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+      }
+      40% {
+        transform: translateX(-25px);
+      }
+      60% {
+        transform: translateX(-15px);
+      }
+}
 
     embed {
       width: 300px;
