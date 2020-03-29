@@ -1,16 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 25px;
-  color: black;
-  background-color: #fdfdfd;
-  font-family: Arial, Helvetica, sans-serif;
-}
-body #body {
+#body {
   height: 64px;
   width: 100%;
   padding-right: 16px;
@@ -25,7 +13,8 @@ body #body {
   -ms-filter: blur(15px);
   z-index: 999;
 }
-body nav {
+
+nav {
   font-size: 18px;
   display: flex;
   align-items: center;
@@ -36,11 +25,11 @@ body nav {
   width: 100%;
   z-index: 2;
 }
-body nav .linkwrapper {
+nav .linkwrapper {
   margin-left: 15px;
   display: flex;
 }
-body nav .linkwrapper a {
+nav .linkwrapper a {
   text-decoration: none;
   color: gray;
   border-right: solid gray thin;
@@ -51,17 +40,17 @@ body nav .linkwrapper a {
   transition: background 0.4s, text-shadow 0.4s;
   cursor: pointer;
 }
-body nav .linkwrapper a:hover {
+nav .linkwrapper a:hover {
   background: rgba(253, 253, 253, 0.3);
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
-body nav .linkwrapper .blog {
+nav .linkwrapper .blog {
   border-right: none;
 }
-body nav .middlespan {
+nav .middlespan {
   flex-grow: 1;
 }
-body nav button {
+nav button {
   font-size: 15px;
   background-color: white;
   margin-right: 30px;
@@ -69,24 +58,25 @@ body nav button {
   padding: 3px 8px 3px 8px;
   background-color: lightgray;
 }
-body nav button:hover {
+nav button:hover {
   background-color: #fdfdfd;
 }
-body .title_pics {
+
+.title_pics {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 110px;
   margin-bottom: 40px;
 }
-body .title_grid {
+.title_pics .title_grid {
   width: 85%;
   height: 800px;
   display: grid;
   grid-template-rows: 1fr 1.5fr 1fr;
   grid-template-columns: 1fr 2fr 1fr;
 }
-body .title_pic1 {
+.title_pics .title_grid .title_pic1 {
   grid-row: 1/3;
   grid-column: 1/2;
   background: linear-gradient(white, black);
@@ -94,7 +84,7 @@ body .title_pic1 {
   background-size: cover;
   border-bottom-left-radius: 320px;
 }
-body .title_pic1:hover {
+.title_pics .title_grid .title_pic1:hover {
   grid-row: 1/3;
   grid-column: 1/2;
   background: linear-gradient(white, rgba(0, 0, 0, 0) 40%), url(docs/IMG_1977.JPG);
@@ -102,7 +92,7 @@ body .title_pic1:hover {
   background-size: cover;
   filter: grayscale(2%);
 }
-body .title_pic2 {
+.title_pics .title_grid .title_pic2 {
   grid-row: 2/4;
   grid-column: 3/4;
   background: linear-gradient(black, white);
@@ -110,14 +100,14 @@ body .title_pic2 {
   background-size: cover;
   border-top-right-radius: 320px;
 }
-body .title_pic2:hover {
+.title_pics .title_grid .title_pic2:hover {
   grid-row: 2/4;
   grid-column: 3/4;
   background: linear-gradient(rgba(0, 0, 0, 0) 65%, white), url(docs/IMG_2001.PNG);
   background-position: center;
   background-size: cover;
 }
-body .title_subtitle {
+.title_pics .title_grid .title_subtitle {
   width: 100%;
   grid-row: 2/3;
   grid-column: 2/3;
@@ -125,11 +115,11 @@ body .title_subtitle {
   justify-content: center;
   align-items: center;
 }
-body .title_subtitle .title_text {
+.title_pics .title_grid .title_subtitle .title_text {
   width: 80%;
   margin-left: 30px;
 }
-body .title_subtitle .title_text h1 {
+.title_pics .title_grid .title_subtitle .title_text h1 {
   margin-top: 30px;
   text-align: left;
   font-size: 50px;
@@ -137,48 +127,50 @@ body .title_subtitle .title_text h1 {
   width: 100%;
   color: #3f3f3f;
 }
-body .title_subtitle .title_text h2 {
+.title_pics .title_grid .title_subtitle .title_text h2 {
   text-align: left;
   font-size: 40px;
   font-family: "Open Sans Condensed", sans-serif;
   width: 100%;
   color: #3f3f3f;
 }
-body .introwrapper {
+
+.introwrapper {
   height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .introwrapper .intro {
+.introwrapper .intro {
   width: 25%;
   padding: 25px;
   margin-top: 50px;
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
+  color: #3f3f3f;
 }
-body .introwrapper .intropic {
+.introwrapper .intropic {
   margin-top: 50px;
   margin-bottom: 50px;
   height: 350px;
-  width: 350px;
+  width: 100vw;
   align-self: flex-start;
   margin-left: 100px;
   display: flex;
   align-items: center;
 }
-body .introwrapper .intropic .arrow-right {
+.introwrapper .intropic .arrow-right {
   box-sizing: content-box;
   height: 0px;
   width: 0px;
   margin-left: 50px;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
-  border-left: 15px solid black;
+  border-left: 15px solid #3f3f3f;
 }
-body .introwrapper .intropic .bounce {
+.introwrapper .intropic .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
@@ -194,9 +186,71 @@ body .introwrapper .intropic .bounce {
     transform: translateX(-15px);
   }
 }
-body .introwrapper .intropic embed {
+.introwrapper .intropic embed {
   width: 300px;
   height: 300px;
+}
+.introwrapper .intropic .timeline {
+  width: 50vw;
+  height: 100px;
+  margin-left: 3vw;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.introwrapper .intropic .timeline #line-svg {
+  height: 50%;
+  width: 100%;
+  margin: 0px 0 0 0px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  font-size: 25px;
+  color: black;
+  background-color: #fdfdfd;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 5000px;
+}
+
+.appear {
+  animation-name: appear;
+  -webkit-animation-name: appear;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+  font-size: 22px;
+  font-weight: bold;
+  height: 50%;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.work {
+  font-size: 22px;
+  height: 50%;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */
