@@ -1,0 +1,73 @@
+.skillswrapper {
+  height: 1400px;
+  // background-color:ivory;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .skillstext {
+    width: 25%;
+    padding:25px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    text-align: justify;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(63,63,63);
+    visibility: hidden;
+    // background-color: gray;
+  }
+
+  .skillslideup {
+    animation-name: skillslideup;
+    -webkit-animation-name: skillslideup;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+    width: 25%;
+    padding:25px;
+    margin-top: 50px;
+    font-size: 0.9em;
+    text-align: justify;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(63,63,63);
+  }
+
+  @keyframes skillslideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+  @-webkit-keyframes skillslideup {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+  .skillstack {
+    margin-top: 150px;
+    height: 700px;
+    width: 100vw;
+    // background-color: grey;
+
+    .skillpicwrapper {
+      margin-left: 140px;
+      width: 400px;
+      height: 100%;
+      background: url(docs/skillstack_example.png)
+    }
+  }
+
+}
+

@@ -119,7 +119,6 @@ nav button:hover {
 }
 .title_pics .title_grid .title_subtitle .title_text {
   width: 80%;
-  margin-left: 30px;
 }
 .title_pics .title_grid .title_subtitle .title_text h1 {
   margin-top: 30px;
@@ -137,8 +136,14 @@ nav button:hover {
   color: #3f3f3f;
 }
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 .introwrapper {
-  height: 800px;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -152,12 +157,46 @@ nav button:hover {
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
   color: #3f3f3f;
+  visibility: hidden;
+}
+.introwrapper .introslideup {
+  animation-name: introslideup;
+  -webkit-animation-name: introslideup;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+  width: 25%;
+  padding: 25px;
+  margin-top: 50px;
+  font-size: 0.9em;
+  text-align: justify;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #3f3f3f;
+}
+@keyframes introslideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes introslideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
 }
 .introwrapper .intropic {
   margin-top: 50px;
-  margin-bottom: 50px;
-  height: 350px;
-  width: 100vw;
+  height: 600px;
+  width: calc(100vw - 100px);
   align-self: flex-start;
   margin-left: 100px;
   display: flex;
@@ -194,35 +233,19 @@ nav button:hover {
 }
 .introwrapper .intropic .timeline {
   width: 50vw;
-  height: 100px;
+  height: 500px;
   margin-left: 3vw;
   display: flex;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.introwrapper .intropic .timeline #line-svg {
+.introwrapper .intropic .timeline .textwrapper {
   height: 50%;
-  width: 100%;
-  margin: 0px 0 0 0px;
+  display: flex;
+  align-items: flex-end;
 }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Open Sans Condensed", sans-serif;
-}
-
-body {
-  font-size: 25px;
-  color: black;
-  background-color: #fdfdfd;
-  font-family: Arial, Helvetica, sans-serif;
-  height: 5000px;
-}
-
-.appear {
+.introwrapper .intropic .timeline .textwrapper .appear {
   animation-name: appear;
   -webkit-animation-name: appear;
   animation-duration: 2s;
@@ -230,9 +253,9 @@ body {
   visibility: visible;
   font-size: 22px;
   font-weight: bold;
-  height: 50%;
+  height: 25%;
+  margin-bottom: 0px;
 }
-
 @keyframes appear {
   0% {
     opacity: 0;
@@ -249,10 +272,272 @@ body {
     opacity: 1;
   }
 }
-.work {
+.introwrapper .intropic .timeline .textwrapper .work {
   font-size: 22px;
-  height: 50%;
+  height: 25%;
   visibility: hidden;
+  margin-bottom: 0px;
+}
+.introwrapper .intropic .timeline .svg {
+  height: 50%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 0.01fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: right;
+}
+.introwrapper .intropic .timeline .svg svg {
+  grid-column: 1/5;
+}
+.introwrapper .intropic .timeline .svg .year {
+  font-size: 20px;
+  border-right: gray solid thin;
+  visibility: hidden;
+  padding-right: 8px;
+}
+.introwrapper .intropic .timeline .svg .yearappear {
+  animation-name: appear;
+  -webkit-animation-name: appear;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+  font-size: 20px;
+  font-weight: bold;
+  border-right: gray solid thin;
+  padding-right: 8px;
+}
+@keyframes yearappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes yearappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.introwrapper .intropic .timeline .svg .datascientist embed {
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 68%;
+  border: solid lightgray thin;
+  width: 65%;
+  height: 8vw;
+  grid-row: 3/4;
+  grid-column: 4/5;
+  overflow: visible;
+}
+.introwrapper .intropic .timeline .svg .demonstrator embed {
+  background-color: white;
+  border-radius: 50%;
+  border: solid lightgray thin;
+  margin-left: 68%;
+  width: 65%;
+  height: 8vw;
+  grid-row: 3/4;
+  grid-column: 3/4;
+  overflow: visible;
+}
+.introwrapper .intropic .timeline .svg .writer embed {
+  background-color: white;
+  border-radius: 50%;
+  border: solid lightgray thin;
+  margin-left: 68%;
+  width: 65%;
+  height: 8vw;
+  grid-row: 3/4;
+  grid-column: 2/3;
+  overflow: visible;
+}
+.introwrapper .intropic .timeline .svg .jobpic {
+  visibility: hidden;
+}
+.introwrapper .intropic .timeline .svg .scientist embed {
+  border-radius: 50%;
+  border: solid lightgray thin;
+  margin-left: 68%;
+  width: 65%;
+  height: 8vw;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  overflow: visible;
+}
+.introwrapper .intropic .timeline .svg .picappear {
+  animation-name: picappear;
+  -webkit-animation-name: picappear;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+}
+@keyframes picappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes picappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.introwrapper .findjob {
+  margin-top: 15px;
+  width: 100px;
+  height: 45px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20%;
+  background-color: #3f3f3f;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 30px;
+  width: 180px;
+  outline: none;
+  visibility: hidden;
+}
+.introwrapper .findjobappear {
+  margin-top: 15px;
+  animation-name: findjobappear;
+  -webkit-animation-name: findjobappear;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+  width: 130px;
+  height: 40px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20%;
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 12px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 30px;
+  outline: none;
+}
+@keyframes findjobappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes findjobappear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.introwrapper .findjobappear:hover {
+  border-radius: 30px;
+  background: #c8c8c8;
+  color: #282828;
+}
+.introwrapper .findjobappear:active {
+  border-radius: 30px;
+  background: #606060;
+  color: white;
+}
+
+.skillswrapper {
+  height: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skillswrapper .skillstext {
+  width: 25%;
+  padding: 25px;
+  margin-top: 50px;
+  font-size: 0.9em;
+  text-align: justify;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #3f3f3f;
+  visibility: hidden;
+}
+.skillswrapper .skillslideup {
+  animation-name: skillslideup;
+  -webkit-animation-name: skillslideup;
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+  width: 25%;
+  padding: 25px;
+  margin-top: 50px;
+  font-size: 0.9em;
+  text-align: justify;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #3f3f3f;
+}
+@keyframes skillslideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes skillslideup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+.skillswrapper .skillstack {
+  margin-top: 150px;
+  height: 700px;
+  width: 100vw;
+}
+.skillswrapper .skillstack .skillpicwrapper {
+  margin-left: 140px;
+  width: 400px;
+  height: 100%;
+  background: url(docs/skillstack_example.png);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  font-size: 25px;
+  color: black;
+  background-color: #fdfdfd;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 4000px;
+  background: linear-gradient(to bottom, white 60%, lightgray);
 }
 
 /*# sourceMappingURL=style.css.map */
