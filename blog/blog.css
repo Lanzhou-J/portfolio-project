@@ -1,0 +1,178 @@
+#body {
+  height: 64px;
+  width: 100%;
+  padding-right: 16px;
+  margin-left: -8px;
+  margin-top: -8px;
+  transition: left 1.2s ease;
+  background: inherit;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  z-index: 999;
+}
+
+nav {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  background: rgba(253, 253, 253, 0.45);
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+nav .linkwrapper {
+  margin-left: 15px;
+  display: flex;
+}
+nav .linkwrapper a {
+  text-decoration: none;
+  color: gray;
+  border-right: solid gray thin;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: background 0.4s, text-shadow 0.4s;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav .linkwrapper a:hover {
+  background: rgba(253, 253, 253, 0.3);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+nav .linkwrapper .blog {
+  border-right: none;
+}
+nav .middlespan {
+  flex-grow: 1;
+}
+nav button {
+  font-size: 15px;
+  background-color: white;
+  margin-right: 30px;
+  margin-left: 15px;
+  padding: 3px 8px 3px 8px;
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav button:hover {
+  background-color: #fdfdfd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  font-size: 25px;
+  color: black;
+  background-color: #fdfdfd;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 2000px;
+  background: linear-gradient(to bottom, white 60%, lightgray);
+}
+body .contentcontainer {
+  margin-top: 20px;
+  width: calc(100vw - 30px);
+  height: 1200px;
+  margin-left: 30px;
+}
+body .contentcontainer .titlewrapper {
+  background: linear-gradient(to top, white, rgba(0, 0, 0, 0)), url(../docs/Blogtitlepic.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .contentcontainer .titlewrapper .title {
+  font-size: 8.5em;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-top: 0px;
+  padding-left: 0px;
+  color: #3f3f3f;
+  letter-spacing: 60px;
+}
+body .contentcontainer .contentwrapper {
+  display: flex;
+  height: calc(1200px - 350px);
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper {
+  width: 93%;
+  height: calc(1200px - 350px);
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .subtitle {
+  width: 100%;
+  height: 12%;
+  letter-spacing: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle {
+  width: 100%;
+  height: 88%;
+  color: gray;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article1 {
+  background-color: #f0f0f0;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article1 h5 {
+  color: black;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article1 h6 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #969696;
+  font-size: 13px;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article2 {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article3 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article4 {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article5 {
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article1contentwrapper {
+  grid-row: 1/span 5;
+  grid-column: 2/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .article1contentwrapper .article1content {
+  width: 80%;
+  color: #373737;
+}
+body .contentcontainer .contentwrapper .sidebar {
+  width: 7%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=blog.css.map */

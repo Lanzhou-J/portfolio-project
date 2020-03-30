@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="blog.css" >
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <title>Blog</title>
+</head>
+<body>
+  <header>
+    <nav class="nav" id="blur">
+      <div class="linkwrapper">
+        <a href="#titlepic2" class="about">About</a>
+        <a href="#intropic" class="experience">Experience</a>
+        <a href="#skillswrapper" class="skills">Skills</a>
+        <a href="#blogintrowrapper" class="blog">Blog</a>
+      </div>
+      <div class="middlespan"></div>
+      <div class="buttonwrapper">
+        <button class="chinese">中文版</button>
+      </div>
+    </nav>
+    <div id="body"></div>
+  </header>
+  <section class="contentcontainer">
+    <div class="titlewrapper">
+      <div class="title">LANA</div>
+    </div>
+    <div class="contentwrapper">
+      
+      <section class="blogarticlewrapper">
+        <div class="subtitle">
+          <p class="blogsubtitle">- BLOG -</p>
+        </div>
+        <article class="blogarticle">
+          <div class="article1" onclick="myFunction()">
+            <div class="articletitle1">
+            <h6 class="date">30 03 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum dolor sit amet, consectetur adipisicing</h5>
+            </div>
+          </div>
+          <div class="article2">2</div>
+          <div class="article3">3</div>
+          <div class="article4">4</div>
+          <div class="article5">5</div>
+          <div class="article1contentwrapper" >
+            <div class="article1content" id="article1_content">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam vitae nam facilis corrupti. Officia explicabo, sunt praesentium velit ipsum in laudantium ab sint repellat obcaecati quis nostrum rem cupiditate quam, ex quibusdam voluptatum? Id commodi, accusamus eligendi repudiandae veritatis quis earum explicabo quidem itaque odio quia tempora voluptates adipisci necessitatibus ipsam eos eius nulla similique, laudantium architecto nostrum perferendis quos facere sed. Autem, fugit sunt? Odit itaque incidunt blanditiis nesciunt autem sunt, maiores vitae! <br>
+            <br>
+            Reprehenderit, porro laudantium? Fugiat tenetur illo tempora possimus quas neque blanditiis atque tempore earum quidem! Modi perferendis ad nisi obcaecati fuga, asperiores cupiditate natus repellendus, voluptate pariatur omnis quae suscipit incidunt amet ratione numquam! Neque delectus debitis perferendis amet a omnis fugiat reprehenderit veritatis, quisquam aliquam at pariatur voluptas placeat assumenda quo temporibus, mollitia odit, esse nesciunt commodi voluptatibus minima nostrum nulla? Sunt labore doloribus ratione officiis repudiandae odit, vel incidunt, hic aliquam odio libero maiores at aspernatur recusandae, atque nam aut illum quae ducimus quam quas iure mollitia? Deleniti, fugit officiis officia, culpa illum vel, quidem exercitationem ut voluptate temporibus eaque nihil corrupti? Minus, totam? Modi corporis deserunt accusantium voluptatibus amet incidunt quod, molestiae quis beatae corrupti, blanditiis adipisci pariatur dolorem eligendi temporibus saepe dignissimos.
+            </div>
+            </div>
+        </article>
+      </section>
+      <aside class="sidebar">sidebar</aside>
+    </div>
+  </section>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("article1_content");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
