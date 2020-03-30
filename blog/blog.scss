@@ -76,14 +76,26 @@ body {
       height: 88%;
       color: gray;
       display: grid;
-      grid-template-columns: 1fr 1.3fr;
+      grid-template-columns: 1fr 1.5fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       // border: black solid thin;
 
       .article1{
+        background-color: rgb(240,240,240);
         grid-row: 1/2;
         grid-column: 1/2;
+        display:flex;
+        justify-content: center;
+        align-items: center;
         // border: black solid thin;
+        h5 {
+          color:black;
+        }
+        h6 {
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          color: rgb(150, 150, 150);
+          font-size: 13px;
+        }
       }
       .article2{
         grid-row: 2/3;
@@ -105,11 +117,20 @@ body {
         grid-column: 1/2;
         // border: black solid thin;
       }
-      .article1content{
+      .article1contentwrapper{
         grid-row: 1/ span 5;
         grid-column: 2/3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         // border: black solid thin;
         // background-color: orange;
+
+        .article1content {
+          width: 80%;
+          color:rgb(55,55,55)
+
+        }
       }
     }
   }
