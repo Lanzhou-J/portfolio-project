@@ -460,7 +460,7 @@ nav button:hover {
 }
 
 .skillswrapper {
-  height: 980px;
+  height: 940px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -540,16 +540,15 @@ nav button:hover {
 }
 .skillswrapper .skillstack .skillpicwrapper .skillbuttonwrap .skillbutton {
   margin-top: 60px;
-  width: 125px;
-  height: 35px;
-  font-size: 13px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #fcfcfc;
-  color: #3f3f3f;
+  background-color: #3f3f3f;
+  color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  border: #c8c8c8 solid thin;
   border-radius: 30px;
   outline: none;
 }
@@ -565,7 +564,7 @@ nav button:hover {
 }
 
 .blogintrowrapper {
-  height: 500px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -574,7 +573,7 @@ nav button:hover {
 .blogintrowrapper .blogintrotext {
   width: 25%;
   padding: 25px;
-  margin-top: 0px;
+  margin-top: 100px;
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
@@ -590,7 +589,7 @@ nav button:hover {
   visibility: visible;
   width: 25%;
   padding: 0px 25px 0px;
-  margin-top: 0px;
+  margin-top: 40px;
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
@@ -625,9 +624,9 @@ nav button:hover {
 }
 .blogintrowrapper .blogbuttonwrap .blogbutton {
   margin-top: 20px;
-  width: 125px;
-  height: 35px;
-  font-size: 13px;
+  width: 130px;
+  height: 40px;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fcfcfc;
   color: #3f3f3f;
@@ -659,7 +658,7 @@ nav button:hover {
 .contactwrapper .contacttext {
   width: 25%;
   padding: 25px;
-  margin-top: 0px;
+  margin-bottom: 25px;
   font-size: 0.9em;
   text-align: center;
   font-family: "Open Sans Condensed", sans-serif;
@@ -675,7 +674,7 @@ nav button:hover {
   visibility: visible;
   width: 25%;
   padding: 0px 25px 0px;
-  margin-top: 0px;
+  margin-bottom: 25px;
   font-size: 0.9em;
   text-align: center;
   font-family: "Open Sans Condensed", sans-serif;
@@ -704,7 +703,7 @@ nav button:hover {
 .contactwrapper .socialmedia_container {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .contactwrapper .socialmedia_container h2 {
   font-size: 30px;
@@ -717,6 +716,7 @@ nav button:hover {
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .contactwrapper .socialmedia_container a:hover {
   color: white;
@@ -734,7 +734,7 @@ body {
   color: black;
   background-color: #fdfdfd;
   font-family: Arial, Helvetica, sans-serif;
-  height: 4000px;
+  height: 4150px;
   background: linear-gradient(to bottom, white 60%, lightgray);
 }
 
