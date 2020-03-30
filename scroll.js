@@ -103,4 +103,14 @@ function myFunction() {
   {
     document.getElementById("skillstext").className = "skillslideup";
   }
+
+  if (document.body.scrollTop > 2280 || document.documentElement.scrollTop > 2280)
+  {
+    document.getElementById("blogintrotext").className = "blogintroslideup";
+  }
+
+  if (document.body.scrollTop > 2950 || document.documentElement.scrollTop > 2950)
+  {
+    document.getElementById("contacttext").className = "contactslideup";
+  }
 }
