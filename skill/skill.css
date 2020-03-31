@@ -76,8 +76,8 @@ body {
   color: black;
   background-color: #fdfdfd;
   font-family: Arial, Helvetica, sans-serif;
-  height: 1500px;
   background: linear-gradient(to bottom, white 80%, lightgray);
+  background-attachment: fixed;
 }
 body .contentcontainer {
   margin-top: 20px;

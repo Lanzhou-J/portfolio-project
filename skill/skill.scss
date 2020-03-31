@@ -12,12 +12,12 @@ body {
   color: black;
   background-color: rgb(253, 253, 253);
   font-family: Arial, Helvetica, sans-serif;
-  height: 1500px;
   background: linear-gradient(
     to bottom,
     white 80%,
     lightgray
   );
+  background-attachment: fixed;
 
   .contentcontainer {
   margin-top: 20px;
