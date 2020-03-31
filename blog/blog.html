@@ -13,10 +13,10 @@
   <header>
     <nav class="nav" id="blur">
       <div class="linkwrapper">
-        <a href="#titlepic2" class="about">About</a>
-        <a href="#intropic" class="experience">Experience</a>
-        <a href="#skillswrapper" class="skills">Skills</a>
-        <a href="#blogintrowrapper" class="blog">Blog</a>
+        <a href="../index.html" class="about">About</a>
+        <a href="../work/work.html" class="experience">Experience</a>
+        <a href="../skill/skill.html" class="skills">Skills</a>
+        <a href="#subtitle" class="blog">Blog</a>
       </div>
       <div class="middlespan"></div>
       <div class="buttonwrapper">
@@ -32,42 +32,60 @@
     <div class="contentwrapper">
       
       <section class="blogarticlewrapper">
-        <div class="subtitle">
+        <div class="subtitle" id="subtitle">
           <p class="blogsubtitle">- BLOG -</p>
         </div>
-        <article class="blogarticle">
-          <div class="article1" onclick="myFunction()">
-            <div class="articletitle1">
+        <article class="blogarticle_grid">
+
+          <div class="posttitle article1-web" id="a1" onclick="displayArticle1()">
+            <div class="title articletitle1">
             <h6 class="date">30 03 2020</h6>
             <h5 class="blogtitle1">Lorem ipsum dolor sit amet, consectetur adipisicing</h5>
             </div>
           </div>
-          <div class="article2">2</div>
-          <div class="article3">3</div>
-          <div class="article4">4</div>
-          <div class="article5">5</div>
+
+          <div class="posttitle article2-web" id="a2" onclick="displayArticle2()">
+            <div class="title articletitle2">
+            <h6 class="date">25 02 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum dolor sit amet</h5>
+            </div>
+          </div>
+
+            <div class="posttitle article3-web" id="a3" onclick="displayArticle3()">
+            <div class="title articletitle3">
+            <h6 class="date">23 02 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h5>
+            </div>
+          </div>
+
+          <div class="posttitle article4-web" id="a4" onclick="displayArticle4()">
+            <div class="title articletitle4">
+            <h6 class="date">20 02 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum dolor sit amet consectetur adipisicing elit Obcaecati.</h5>
+            </div>
+          </div>
+
+          <div class="posttitle article5-web" id="a5" onclick="displayArticle5()">
+            <div class="title articletitle5">
+            <h6 class="date">15 02 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum dolor sit amet consectetur</h5>
+            </div>
+          </div>
           <div class="article1contentwrapper" >
-            <div class="article1content" id="article1_content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam vitae nam facilis corrupti. Officia explicabo, sunt praesentium velit ipsum in laudantium ab sint repellat obcaecati quis nostrum rem cupiditate quam, ex quibusdam voluptatum? Id commodi, accusamus eligendi repudiandae veritatis quis earum explicabo quidem itaque odio quia tempora voluptates adipisci necessitatibus ipsam eos eius nulla similique, laudantium architecto nostrum perferendis quos facere sed. Autem, fugit sunt? Odit itaque incidunt blanditiis nesciunt autem sunt, maiores vitae! <br>
-            <br>
-            Reprehenderit, porro laudantium? Fugiat tenetur illo tempora possimus quas neque blanditiis atque tempore earum quidem! Modi perferendis ad nisi obcaecati fuga, asperiores cupiditate natus repellendus, voluptate pariatur omnis quae suscipit incidunt amet ratione numquam! Neque delectus debitis perferendis amet a omnis fugiat reprehenderit veritatis, quisquam aliquam at pariatur voluptas placeat assumenda quo temporibus, mollitia odit, esse nesciunt commodi voluptatibus minima nostrum nulla? Sunt labore doloribus ratione officiis repudiandae odit, vel incidunt, hic aliquam odio libero maiores at aspernatur recusandae, atque nam aut illum quae ducimus quam quas iure mollitia? Deleniti, fugit officiis officia, culpa illum vel, quidem exercitationem ut voluptate temporibus eaque nihil corrupti? Minus, totam? Modi corporis deserunt accusantium voluptatibus amet incidunt quod, molestiae quis beatae corrupti, blanditiis adipisci pariatur dolorem eligendi temporibus saepe dignissimos.
+            <div class="article_content" id="article1_content">
+            <h2 class="article_content_title" id="a_title"></h2>
+            <p class="article_content_paragraph" id="a_paragraph">Click to learn more ...</p>
             </div>
             </div>
         </article>
       </section>
-      <aside class="sidebar">sidebar</aside>
+      <aside class="sidebar">
+        <p class="sidebartext">Life</p>
+        <p class="sidebartext">Study</p>
+        <p class="sidebartext">Art</p>
+      </aside>
     </div>
   </section>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("article1_content");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
 </body>
+<script type="text/javascript" src="blog_article.js"></script>
 </html>

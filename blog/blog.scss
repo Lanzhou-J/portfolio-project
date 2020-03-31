@@ -12,17 +12,17 @@ body {
   color: black;
   background-color: rgb(253, 253, 253);
   font-family: Arial, Helvetica, sans-serif;
-  height: 2000px;
+  height: 1400px;
   background: linear-gradient(
     to bottom,
-    white 60%,
+    white 90%,
     lightgray
   );
 
   .contentcontainer {
   margin-top: 20px;
   // background-color: pink;
-  width: calc(100vw - 30px);
+  width: calc(100vw - 45px);
   height: 1200px;
   margin-left: 30px;
 
@@ -70,7 +70,7 @@ body {
 
     }
 
-    .blogarticle {
+    .blogarticle_grid {
       width: 100%;
       // background-color: rgb(198, 220, 198);
       height: 88%;
@@ -80,14 +80,15 @@ body {
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
       // border: black solid thin;
 
-      .article1{
+      .posttitle{
         background-color: rgb(240,240,240);
-        grid-row: 1/2;
-        grid-column: 1/2;
         display:flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         // border: black solid thin;
+        .title {
+          margin-left: 10%;
+
         h5 {
           color:black;
         }
@@ -96,23 +97,38 @@ body {
           color: rgb(150, 150, 150);
           font-size: 13px;
         }
+        }
       }
-      .article2{
+
+      .posttitle:hover {
+        background-color: rgb(233,233,233);
+        cursor: pointer;
+      }
+      .posttitle:active {
+        background-color: white;
+      }
+
+      .article1-web {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+
+      .article2-web {
         grid-row: 2/3;
         grid-column: 1/2;
         // border: black solid thin;
       }
-      .article3{
+      .article3-web {
         grid-row: 3/4;
         grid-column: 1/2;
         // border: black solid thin;
       }
-      .article4{
+      .article4-web {
         grid-row: 4/5;
         grid-column: 1/2;
         // border: black solid thin;
       }
-      .article5{
+      .article5-web {
         grid-row: 5/6;
         grid-column: 1/2;
         // border: black solid thin;
@@ -121,14 +137,15 @@ body {
         grid-row: 1/ span 5;
         grid-column: 2/3;
         display: flex;
-        align-items: center;
+        align-items:flex-start;
         justify-content: center;
         // border: black solid thin;
         // background-color: orange;
 
         .article1content {
           width: 80%;
-          color:rgb(55,55,55)
+          color:rgb(55,55,55);
+          font-size: 22px;
 
         }
       }
@@ -137,7 +154,28 @@ body {
   .sidebar {
     // background-color: lightsalmon;
     width: 7%;
-    height: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .sidebartext {
+      transform:rotate(90deg);
+      -ms-transform:rotate(90deg); /* Internet Explorer 9*/
+      -moz-transform:rotate(90deg); /* Firefox */
+      -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+      -o-transform:rotate(90deg); /* Opera */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+      margin-top: 100px;
+      font-size: 17px;
+      // background-color: palegreen;
+      height:50px;
+      width: 200px;
+      font-family:'Courier New', Courier, monospace;
+    }
+
+
   }
   }
 }

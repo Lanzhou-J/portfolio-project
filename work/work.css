@@ -1,0 +1,252 @@
+#body {
+  height: 64px;
+  width: 100%;
+  padding-right: 16px;
+  margin-left: -8px;
+  margin-top: -8px;
+  transition: left 1.2s ease;
+  background: inherit;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  z-index: 999;
+}
+
+nav {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  background: rgba(253, 253, 253, 0.45);
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+nav .linkwrapper {
+  margin-left: 15px;
+  display: flex;
+}
+nav .linkwrapper a {
+  text-decoration: none;
+  color: gray;
+  border-right: solid gray thin;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: background 0.4s, text-shadow 0.4s;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav .linkwrapper a:hover {
+  background: rgba(253, 253, 253, 0.3);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+nav .linkwrapper .blog {
+  border-right: none;
+}
+nav .middlespan {
+  flex-grow: 1;
+}
+nav button {
+  font-size: 15px;
+  background-color: white;
+  margin-right: 30px;
+  margin-left: 15px;
+  padding: 3px 8px 3px 8px;
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav button:hover {
+  background-color: #fdfdfd;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  font-size: 25px;
+  color: black;
+  background-color: #fdfdfd;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .contentcontainer {
+  margin-top: 20px;
+  width: calc(100vw - 15px);
+  height: 1400px;
+}
+body .contentcontainer .titlewrapper {
+  background: linear-gradient(to top, white, rgba(0, 0, 0, 0)), url(../docs/whiteleaf.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .contentcontainer .titlewrapper .title {
+  font-size: 8.5em;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-top: 0px;
+  padding-left: 0px;
+  color: #3f3f3f;
+  letter-spacing: 60px;
+}
+body .contentcontainer .contentwrapper {
+  display: flex;
+  height: calc(1200px - 350px);
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper {
+  width: 93%;
+  height: calc(1200px - 350px);
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .subtitle {
+  width: 100%;
+  height: 12%;
+  letter-spacing: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle {
+  width: 100%;
+  height: 100%;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  max-width: 100%;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper {
+  width: 300px;
+  height: 350px;
+  display: flex;
+  border-color: black;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 8px;
+  margin: 10px;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .top {
+  /* background: yellow; */
+  display: flex;
+  width: 300px;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 14px;
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #police {
+  background: url(https://randomuser.me/api/portraits/lego/0.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .heading {
+  /* width: 200px; */
+  /* height: 100px; */
+  /* justify-content: center; */
+  text-align: center;
+  /* background: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle h1 {
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-size: 1em;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle h3 {
+  margin-top: 8px;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle p {
+  font-size: 0.6em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .middle {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  height: 130px;
+  text-align: justify;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle button {
+  width: 50%;
+  margin: 0px 25px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #0088f9;
+  color: white;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle button:hover {
+  width: 50%;
+  margin: 0px 25px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #1964a1;
+  color: white;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #chef {
+  background: url(https://randomuser.me/api/portraits/lego/8.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #doctor {
+  background: url(https://randomuser.me/api/portraits/lego/3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #mexican {
+  background: url(https://randomuser.me/api/portraits/lego/6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #worker {
+  background: url(https://randomuser.me/api/portraits/lego/7.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #magician {
+  background: url(https://randomuser.me/api/portraits/lego/2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+body .sidebar {
+  width: 4%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=work.css.map */
