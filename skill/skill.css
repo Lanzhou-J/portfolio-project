@@ -130,15 +130,17 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-co
   max-width: 100%;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper {
-  width: 300px;
+  width: 380px;
   height: 350px;
   background-color: white;
   display: flex;
-  border-color: black;
+  border-color: darkgray;
   border-style: solid;
   border-width: thin;
-  border-radius: 8px;
   margin: 10px;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper:hover {
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .top {
   /* background: yellow; */
@@ -149,17 +151,40 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card {
   font-family: Arial, Helvetica, sans-serif;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 14px;
+  width: 70px;
+  height: 70px;
+  margin: 30px;
+  margin-top: 40px;
+  margin-left: 40px;
   display: inline-block;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #police {
-  background: url(https://randomuser.me/api/portraits/lego/0.jpg);
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #design {
+  background: url(../docs/icons/painting.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #language {
+  background: url(../docs/icons/language.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #frontend {
+  background: url(../docs/icons/ux.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #backend {
+  background: url(../docs/icons/code.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #data {
+  background: url(../docs/icons/marketing.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #other {
+  background: url(../docs/icons/growth.png);
   background-position: center;
   background-size: cover;
 }
@@ -175,11 +200,14 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .heading
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle h1 {
   margin-top: 8px;
+  margin-left: 35px;
   margin-bottom: 2px;
   font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle h3 {
   margin-top: 8px;
+  margin-left: 30px;
   margin-bottom: 5px;
   font-size: 0.8em;
 }
@@ -193,6 +221,23 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .middle 
   margin-top: 20px;
   height: 130px;
   text-align: justify;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .middle_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-left: 50px;
+  margin-right: 30px;
+  height: 130px;
+  width: 80%;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .middle_list .part {
+  margin-left: 10px;
+  margin-right: 30px;
+  height: 100px;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .button {
   display: flex;
