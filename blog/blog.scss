@@ -1,0 +1,183 @@
+@import '../nav';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+body {
+  font-size: 25px;
+  color: black;
+  background-color: rgb(253, 253, 253);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 1400px;
+  background: linear-gradient(
+    to bottom,
+    white 90%,
+    lightgray
+  );
+
+  .contentcontainer {
+  margin-top: 20px;
+  // background-color: pink;
+  width: calc(100vw - 45px);
+  height: 1200px;
+  margin-left: 30px;
+
+  .titlewrapper {
+    background: linear-gradient(to top, rgba(255,255,255,1), rgba(0,0,0,0)),
+    url(../docs/Blogtitlepic.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+      font-size:8.5em;
+      font-family: 'Open Sans Condensed', sans-serif;
+      padding-top: 0px;
+      padding-left: 0px;
+      color: rgb(63, 63, 63);
+      letter-spacing: 60px;
+    }
+
+  }
+
+  .contentwrapper {
+    // background-color: gray;
+    display:flex;
+    height: calc(1200px - 350px);
+
+
+  .blogarticlewrapper {
+    // background-color: ivory;
+    width:93%;
+    height: calc(1200px - 350px);
+
+    .subtitle {
+      width: 100%;
+      height: 12%;
+      letter-spacing: 15px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      // background-color: lightseagreen;
+
+    }
+
+    .blogarticle_grid {
+      width: 100%;
+      // background-color: rgb(198, 220, 198);
+      height: 88%;
+      color: gray;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      // border: black solid thin;
+
+      .posttitle{
+        background-color: rgb(240,240,240);
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        // border: black solid thin;
+        .title {
+          margin-left: 10%;
+
+        h5 {
+          color:black;
+        }
+        h6 {
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          color: rgb(150, 150, 150);
+          font-size: 13px;
+        }
+        }
+      }
+
+      .posttitle:hover {
+        background-color: rgb(233,233,233);
+        cursor: pointer;
+      }
+      .posttitle:active {
+        background-color: white;
+      }
+
+      .article1-web {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+
+      .article2-web {
+        grid-row: 2/3;
+        grid-column: 1/2;
+        // border: black solid thin;
+      }
+      .article3-web {
+        grid-row: 3/4;
+        grid-column: 1/2;
+        // border: black solid thin;
+      }
+      .article4-web {
+        grid-row: 4/5;
+        grid-column: 1/2;
+        // border: black solid thin;
+      }
+      .article5-web {
+        grid-row: 5/6;
+        grid-column: 1/2;
+        // border: black solid thin;
+      }
+      .article1contentwrapper{
+        grid-row: 1/ span 5;
+        grid-column: 2/3;
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+        // border: black solid thin;
+        // background-color: orange;
+
+        .article1content {
+          width: 80%;
+          color:rgb(55,55,55);
+          font-size: 22px;
+
+        }
+      }
+    }
+  }
+  .sidebar {
+    // background-color: lightsalmon;
+    width: 7%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .sidebartext {
+      transform:rotate(90deg);
+      -ms-transform:rotate(90deg); /* Internet Explorer 9*/
+      -moz-transform:rotate(90deg); /* Firefox */
+      -webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+      -o-transform:rotate(90deg); /* Opera */
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+      margin-top: 100px;
+      font-size: 17px;
+      // background-color: palegreen;
+      height:50px;
+      width: 200px;
+      font-family:'Courier New', Courier, monospace;
+    }
+
+
+  }
+  }
+}
+}
+

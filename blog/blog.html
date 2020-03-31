@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="blog.css" >
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <title>Blog</title>
+</head>
+<body>
+  <header>
+    <nav class="nav" id="blur">
+      <div class="linkwrapper">
+        <a href="../index.html" class="about">About</a>
+        <a href="../work/work.html" class="experience">Experience</a>
+        <a href="../skill/skill.html" class="skills">Skills</a>
+        <a href="#subtitle" class="blog">Blog</a>
+      </div>
+      <div class="middlespan"></div>
+      <div class="buttonwrapper">
+        <button class="chinese">中文版</button>
+      </div>
+    </nav>
+    <div id="body"></div>
+  </header>
+  <section class="contentcontainer">
+    <div class="titlewrapper">
+      <div class="title">LANA</div>
+    </div>
+    <div class="contentwrapper">
+      
+      <section class="blogarticlewrapper">
+        <div class="subtitle" id="subtitle">
+          <p class="blogsubtitle">- BLOG -</p>
+        </div>
+        <article class="blogarticle_grid">
+
+          <div class="posttitle article1-web" id="a1" onclick="displayArticle1()">
+            <div class="title articletitle1">
+            <h6 class="date">30 03 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum dolor sit amet, consectetur adipisicing</h5>
+            </div>
+          </div>
+
+          <div class="posttitle article2-web" id="a2" onclick="displayArticle2()">
+            <div class="title articletitle2">
+            <h6 class="date">25 02 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum dolor sit amet</h5>
+            </div>
+          </div>
+
+            <div class="posttitle article3-web" id="a3" onclick="displayArticle3()">
+            <div class="title articletitle3">
+            <h6 class="date">23 02 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum, dolor sit amet consectetur adipisicing elit</h5>
+            </div>
+          </div>
+
+          <div class="posttitle article4-web" id="a4" onclick="displayArticle4()">
+            <div class="title articletitle4">
+            <h6 class="date">20 02 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum dolor sit amet consectetur adipisicing elit Obcaecati.</h5>
+            </div>
+          </div>
+
+          <div class="posttitle article5-web" id="a5" onclick="displayArticle5()">
+            <div class="title articletitle5">
+            <h6 class="date">15 02 2020</h6>
+            <h5 class="blogtitle1">Lorem ipsum dolor sit amet consectetur</h5>
+            </div>
+          </div>
+          <div class="article1contentwrapper" >
+            <div class="article_content" id="article1_content">
+            <h2 class="article_content_title" id="a_title"></h2>
+            <p class="article_content_paragraph" id="a_paragraph">Click to learn more ...</p>
+            </div>
+            </div>
+        </article>
+      </section>
+      <aside class="sidebar">
+        <p class="sidebartext">Life</p>
+        <p class="sidebartext">Study</p>
+        <p class="sidebartext">Art</p>
+      </aside>
+    </div>
+  </section>
+</body>
+<script type="text/javascript" src="blog_article.js"></script>
+</html>

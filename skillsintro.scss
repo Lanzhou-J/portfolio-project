@@ -1,5 +1,5 @@
 .skillswrapper {
-  height: 980px;
+  height: 940px;
   // background-color:ivory;
   display: flex;
   flex-direction: column;
@@ -95,16 +95,16 @@
         // background-color: darkkhaki;
         .skillbutton {
           margin-top: 60px;
-          width: 125px;
-          height: 35px;
-          font-size: 13px;
+          width: 130px;
+          height: 40px;
+          font-size: 14px;
           font-family: Arial, Helvetica, sans-serif;
-          background-color: rgb(252,252,252); 
-          color: rgb(63,63,63);
+          background-color: rgb(63,63,63); 
+          color: white;
           text-align: center;
           text-decoration: none;
           display: inline-block;
-          border: rgb(200,200,200) solid thin;
+          // border: rgb(200,200,200) solid thin;
           border-radius: 30px;
           outline:none;
         }
