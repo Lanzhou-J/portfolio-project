@@ -52,13 +52,17 @@ body {
 
 
   .blogarticlewrapper {
-    // background-color: ivory;
+    // width:93%;
+    // height: calc(1200px - 350px);
+    // background-color: pink;
     width:93%;
-    height: calc(1200px - 350px);
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 
     .subtitle {
       width: 100%;
-      height: 12%;
+      height: 100px;
       letter-spacing: 15px;
       display:flex;
       justify-content: center;
@@ -74,7 +78,6 @@ body {
       .card-container {
         display: flex;
         flex-wrap: wrap;
-        // background: white;
         align-content: space-evenly;
         justify-content: space-evenly;
         max-width: 100%;
@@ -274,16 +277,19 @@ p {
 
 @media only screen and (max-width: 660px) {
  	#Lanzhou {
-		font-size: 105px;
-    letter-spacing: 15px;
+		font-size: 100px;
+    letter-spacing: 12px;
 	}
+  #titlewrapper {
+    height: 200px;
+  }
   
 }
 
 @media only screen and (max-width: 400px) {
- 	#Lanzhou {
-		font-size: 90px;
-    letter-spacing: 10px;
+#Lanzhou {
+		font-size: 85px;
+    letter-spacing: 7.5px;
 	}
   
 }
