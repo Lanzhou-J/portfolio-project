@@ -76,11 +76,14 @@ body {
   color: black;
   background-color: #fdfdfd;
   font-family: Arial, Helvetica, sans-serif;
+  height: 1800px;
+  background: linear-gradient(to bottom, white 80%, lightgray);
+  background-attachment: fixed;
 }
 body .contentcontainer {
   margin-top: 20px;
   width: calc(100vw - 15px);
-  height: 1400px;
+  height: 1500px;
 }
 body .contentcontainer .titlewrapper {
   background: linear-gradient(to top, white, rgba(0, 0, 0, 0)), url(../docs/whiteleaf.jpeg);
@@ -106,7 +109,9 @@ body .contentcontainer .contentwrapper {
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper {
   width: 93%;
-  height: calc(1200px - 350px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .subtitle {
   width: 100%;
@@ -117,8 +122,9 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .subtitle {
   align-items: center;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  margin-bottom: 15px;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container {
   display: flex;
@@ -128,115 +134,99 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-co
   max-width: 100%;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper {
-  width: 300px;
-  height: 350px;
+  width: 80%;
+  height: 200px;
+  background-color: white;
   display: flex;
-  border-color: black;
-  border-style: solid;
   border-width: thin;
-  border-radius: 8px;
   margin: 10px;
+  justify-content: center;
+  align-items: center;
+  border-top: rgba(148, 148, 148, 0.4) dashed thin;
+  border-radius: 30px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .top {
-  /* background: yellow; */
-  display: flex;
-  width: 300px;
-}
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card {
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card {
   font-family: Arial, Helvetica, sans-serif;
+  width: 98%;
+  height: 96%;
+  display: flex;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .photo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 14px;
-  display: inline-block;
-  border-style: solid;
-  border-color: black;
-  border-width: thin;
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #police {
-  background: url(https://randomuser.me/api/portraits/lego/0.jpg);
-  background-position: center;
-  background-size: cover;
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .left .icon {
+  width: 80px;
+  height: 80px;
+  margin-top: 30px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .heading {
-  /* width: 200px; */
-  /* height: 100px; */
-  /* justify-content: center; */
-  text-align: center;
-  /* background: white; */
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .right {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .right .text {
+  width: 95%;
+  height: 80%;
+  color: #3f3f3f;
+}
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .right .text .heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle h1 {
-  margin-top: 8px;
-  margin-bottom: 2px;
-  font-size: 1em;
-}
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle h3 {
-  margin-top: 8px;
   margin-bottom: 5px;
-  font-size: 0.8em;
+  margin-top: 8px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle p {
-  font-size: 0.6em;
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .right .text .heading .title {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .middle {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 20px;
-  height: 130px;
-  text-align: justify;
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .right .text .heading .company_time {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .right .text .heading .duration_location {
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  color: gray;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle button {
-  width: 50%;
-  margin: 0px 25px;
-  height: 30px;
-  border-radius: 5px;
-  font-size: 15px;
-  background-color: #0088f9;
-  color: white;
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper .card .right .text .detail {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17.5px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle button:hover {
-  width: 50%;
-  margin: 0px 25px;
-  height: 30px;
-  border-radius: 5px;
-  font-size: 15px;
-  background-color: #1964a1;
-  color: white;
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper:hover {
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.01) translateY(-2px);
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #chef {
-  background: url(https://randomuser.me/api/portraits/lego/8.jpg);
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #MYOB {
+  background: url(../docs/icons/MYOB.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #doctor {
-  background: url(https://randomuser.me/api/portraits/lego/3.jpg);
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #RMIT {
+  background: url(../docs/icons/RMIT.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #mexican {
-  background: url(https://randomuser.me/api/portraits/lego/6.jpg);
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #Latrobe {
+  background: url(../docs/icons/latrobe.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #worker {
-  background: url(https://randomuser.me/api/portraits/lego/7.jpg);
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #sci {
+  background: url(../docs/icons/scidesign.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #magician {
-  background: url(https://randomuser.me/api/portraits/lego/2.jpg);
+body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle #douban {
+  background: url(../docs/icons/douban.png);
   background-position: center;
   background-size: cover;
 }
