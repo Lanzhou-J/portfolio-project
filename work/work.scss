@@ -38,7 +38,7 @@ body {
     justify-content: center;
 
     .title {
-      font-size:8.5em;
+      font-size:220px;
       font-family: 'Open Sans Condensed', sans-serif;
       padding-top: 0px;
       padding-left: 0px;
@@ -57,13 +57,13 @@ body {
     .blogarticlewrapper {
       // background-color: pink;
       width:93%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      // display: flex;
+      // flex-direction: column;
+      // align-items: center;
 
       .subtitle {
         width: 100%;
-        height: 12%;
+        height: 100px;
         letter-spacing: 15px;
         display:flex;
         justify-content: center;
@@ -73,7 +73,7 @@ body {
       }
 
       .blogarticle {
-        width: 90%;
+        width: 100%;
         // background-color: rgb(198, 220, 198);
         height: 90%;
         margin-bottom: 15px;
@@ -112,14 +112,14 @@ body {
 
               .left {
                 // background-color: peachpuff;
-                width: 25%;
+                width: 30%;
                 height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: flex-start;
                 .icon {
-                  width:80px;
-                  height: 80px;
+                  width:85px;
+                  height: 85px;
                   margin-top: 30px;
                   // border-top: rgba(0,0,0,0.2)solid thin;
                 }
@@ -157,7 +157,7 @@ body {
 
               .right {
                 // background-color: powderblue;
-                width: 75%;
+                width: 70%;
                 height: 100%;
                 display: flex;
                 align-items: center;
@@ -264,22 +264,94 @@ body {
 		font-size: 200px;
     letter-spacing: 15px;
 	}
+
+  #detail {
+    font-size: 15px;
+  }
+
+  .blogsubtitle {
+    letter-spacing: 7px;
+  }
+
 }
 
+@media only screen and (max-width: 880px) {
+
+
+  #card_wrapper {
+    width: 93%;
+    height: 216px;
+  }
+
+  .right {
+    margin-left: 20px;
+  }
+
+}
 
 @media only screen and (max-width: 660px) {
- 	#Lanzhou {
-		font-size: 105px;
-    letter-spacing: 15px;
+
+  #titlewrapper {
+    height: 200px;
+  }
+  
+  
+  #douban, #sci, #Latrobe, #RMIT, #MYOB {
+    width: 70px;
+    height: 70px;
+  }
+ 	#title {
+     font-size: 16px;
+   }
+
+  #heading {
+    margin-bottom: 0px;
+    margin-top:0px;
+  }
+
+  #graytext {
+    font-size: 13px;
+  }
+   
+   #Lanzhou {
+		font-size: 100px;
+    letter-spacing: 12px;
 	}
+
+  #detail {
+    font-size: 13.5px;
+  }
+
+  #card_wrapper {
+    width: 95%;
+    height: 230px;
+  }
   
 }
 
 @media only screen and (max-width: 400px) {
  	#Lanzhou {
-		font-size: 90px;
-    letter-spacing: 10px;
+		font-size: 85px;
+    letter-spacing: 7.5px;
 	}
+
+  #graytext {
+    font-size: 11.5px;
+  }
+
+  #heading {
+    margin-bottom: 0px;
+    margin-top:3px;
+  }
+
+  #detail {
+    font-size: 11.5px;
+  }
+
+  #card_wrapper {
+    width: 98%;
+    height: 230px;
+  }
   
 }
 

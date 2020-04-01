@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #body {
   height: 64px;
-  width: 100%;
+  width: 100vw;
   padding-right: 16px;
   margin-left: -8px;
   margin-top: -8px;
@@ -23,26 +23,26 @@ nav {
   height: 70px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
 }
 nav .linkwrapper {
   margin-left: 15px;
   display: flex;
 }
-nav .linkwrapper a {
+nav .linkwrapper .links {
   text-decoration: none;
   color: gray;
   border-right: solid gray thin;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 12px;
+  padding-left: 12px;
   padding-top: 10px;
   padding-bottom: 10px;
   transition: background 0.4s, text-shadow 0.4s;
   cursor: pointer;
   font-family: Arial, Helvetica, sans-serif;
 }
-nav .linkwrapper a:hover {
+nav .linkwrapper .links:hover {
   background: rgba(253, 253, 253, 0.3);
   text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
 }
@@ -55,7 +55,7 @@ nav .middlespan {
 nav button {
   font-size: 15px;
   background-color: white;
-  margin-right: 30px;
+  margin-right: 35px;
   margin-left: 15px;
   padding: 3px 8px 3px 8px;
   background-color: lightgray;
@@ -65,6 +65,56 @@ nav button:hover {
   background-color: #fdfdfd;
 }
 
+@media only screen and (max-width: 520px) {
+  .chinese {
+    font-size: 12px;
+    padding: 1.5px 4.5px 1.5px 4.5px;
+  }
+
+  .about, .experience, .skills, .blog {
+    font-size: 14px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .chinese {
+    font-size: 9px;
+    padding: 1.5px 4.5px 1.5px 4.5px;
+  }
+
+  .links {
+    font-size: 13px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .chinese {
+    font-size: 7.5px;
+    padding: 1.5px 2.5px 1.5px 2.5px;
+  }
+
+  .links {
+    font-size: 13px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .chinese {
+    font-size: 6px;
+    padding: 1.5px 2px 1.5px 2px;
+    margin-left: 0px;
+    margin-right: 5px;
+    border: 1px;
+  }
+
+  .links {
+    font-size: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -83,9 +133,9 @@ body {
 }
 body .contentcontainer {
   margin-top: 20px;
-  width: calc(100vw - 45px);
+  width: 98vw;
   height: 1200px;
-  margin-left: 30px;
+  margin-left: 2vw;
 }
 body .contentcontainer .titlewrapper {
   background: linear-gradient(to top, white, rgba(0, 0, 0, 0)), url(../docs/Blogtitlepic.jpeg);
@@ -346,6 +396,39 @@ body .contentcontainer .contentwrapper .sidebar .sidebartext {
   font-size: 2em;
   padding: 0.1em;
   vertical-align: baseline;
+}
+
+@media only screen and (max-width: 1100px) {
+  #Lanzhou {
+    font-size: 200px;
+    letter-spacing: 15px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  #sidebar {
+    width: 0px;
+    visibility: hidden;
+  }
+
+  #blogarticlewrapper {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #Lanzhou {
+    font-size: 100px;
+    letter-spacing: 12px;
+  }
+
+  #titlewrapper {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #Lanzhou {
+    font-size: 85px;
+    letter-spacing: 7.5px;
+  }
 }
 
 /*# sourceMappingURL=blog.css.map */
