@@ -189,8 +189,8 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle_grid .po
   align-items: center;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle_grid .posttitle .title {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle_grid .posttitle .title h5 {
   color: #323232;
@@ -403,6 +403,60 @@ body .contentcontainer .contentwrapper .sidebar .sidebartext {
     font-size: 200px;
     letter-spacing: 15px;
   }
+
+  #blogtitle1 {
+    font-size: 13.5px;
+  }
+
+  #date {
+    font-size: 10px;
+  }
+
+  #blogarticle_grid {
+    grid-template-columns: 1fr 3.5fr;
+  }
+
+  #art1 {
+    width: 50%;
+    height: 24vw;
+  }
+
+  #portrait {
+    width: 50%;
+    height: 22vw;
+  }
+
+  #arvo_sandwitch {
+    width: 70%;
+    height: 18vw;
+  }
+
+  #plants {
+    width: 65%;
+    height: 21vw;
+  }
+
+  #art2 {
+    width: 50%;
+    height: 24vw;
+  }
+
+  #cat {
+    width: 70%;
+    height: 19vw;
+  }
+
+  #ia {
+    font-size: 18px;
+  }
+
+  #textd {
+    font-size: 16px;
+  }
+
+  #id {
+    width: 92%;
+  }
 }
 @media only screen and (max-width: 850px) {
   #sidebar {
@@ -412,6 +466,11 @@ body .contentcontainer .contentwrapper .sidebar .sidebartext {
 
   #blogarticlewrapper {
     width: 100%;
+  }
+
+  #contentcontainer {
+    margin-left: 0vw;
+    width: 100vw;
   }
 }
 @media only screen and (max-width: 660px) {
