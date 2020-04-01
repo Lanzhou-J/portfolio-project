@@ -12,18 +12,19 @@ body {
   color: black;
   background-color: rgb(253, 253, 253);
   font-family: Arial, Helvetica, sans-serif;
-  // height: 1500px;
-  // background: linear-gradient(
-  //   to bottom,
-  //   white 80%,
-  //   lightgray
-  // );
+  height: 1800px;
+  background: linear-gradient(
+    to bottom,
+    white 80%,
+    lightgray
+  );
+  background-attachment: fixed;
 
   .contentcontainer {
   margin-top: 20px;
   // background-color: pink;
   width: calc(100vw - 15px);
-  height: 1400px;
+  height: 1500px;
 
   .titlewrapper {
     background: linear-gradient(to top, rgba(255,255,255,1), rgba(0,0,0,0)),
@@ -54,9 +55,11 @@ body {
 
 
   .blogarticlewrapper {
-    // background-color: ivory;
+    // background-color: pink;
     width:93%;
-    height: calc(1200px - 350px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .subtitle {
       width: 100%;
@@ -70,9 +73,10 @@ body {
     }
 
     .blogarticle {
-      width: 100%;
+      width: 90%;
       // background-color: rgb(198, 220, 198);
-      height: 100%;
+      height: 90%;
+      margin-bottom: 15px;
 
 
       .card-container {
@@ -86,132 +90,121 @@ body {
 }
 
 .card-wrapper{
-	width: 300px;
-  height:350px;
-  // background-color:white;
+	width: 80%;
+  height:200px;
+  background-color:white;
   display: flex;
-  border-color: black;
-  border-style: solid;
+  // border-style: solid;
   border-width: thin;
-  border-radius: 8px;
   margin: 10px;
-}
-
-.top {
-  /* background: yellow; */
-  display: flex;
-  width: 300px;
-}
-
-.card {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.photo {
-  width:100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: 14px;
-  display: inline-block;
-  border-style: solid;
-  border-color: black;
-  border-width:thin;
-}
-
-#police {
-  background:url(https://randomuser.me/api/portraits/lego/0.jpg);
-  background-position: center;
-  background-size: cover;}
-
-.heading {
-  /* width: 200px; */
-  /* height: 100px; */
-  /* justify-content: center; */
-  text-align: center;
-  /* background: white; */
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-}
+  align-items: center;
+  // border-color: darkgray;
+  border-top: rgba(148,148,148,0.4) dashed thin;
+  border-radius: 30px;
+  box-shadow:0 6px 10px 0 rgba(0,0,0,0.2); ;
+  
 
-h1 {
-  margin-top: 8px;
-  margin-bottom: 2px;
-  font-size: 1em;
-}
-
-h3 {
-  margin-top: 8px;
-  margin-bottom: 5px;
-  font-size: 0.8em;
-}
-
-p {
-  font-size: 0.6em;
+  .card {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.middle {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-top: 20px;
-  height: 130px;
-  text-align: justify;
-}
-
-.button {
+  width: 98%;
+  height: 96%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
+
+
+  .left {
+    // background-color: peachpuff;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .icon {
+      width:80px;
+      height: 80px;
+      margin-top: 30px;
+      // border-top: rgba(0,0,0,0.2)solid thin;
+    }
+  }
+
+  .right {
+    // background-color: powderblue;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    // border-left:rgba(148,148,148,0.4) dashed thin;
+
+    .text {
+      width:95%;
+      height:80%;
+      color: rgb(63, 63, 63);
+      // background-color: palegreen;
+
+      .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 5px;
+        margin-top: 8px;
+        .title {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 19px;
+        }
+        .company_time {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-size: 17px;
+        }
+        .duration_location {
+          letter-spacing: 1.2px;
+          font-size: 17px;
+          color: gray;
+        }
+    }
+    .detail {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 17.5px;
+    }
+    }
+  }
+  }
 }
 
-button {
-  width: 50%;
-  margin: 0px 25px;
-  height: 30px;
-  border-radius: 5px;
-  font-size: 15px;
-  background-color: rgb(0, 136, 249);
-  color: white;
+.card-wrapper:hover {
+  box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.01) translateY(-2px);
 }
 
-button:hover {
-  width: 50%;
-  margin: 0px 25px;
-  height: 30px;
-  border-radius: 5px;
-  font-size: 15px;
-  background-color: rgb(25, 100, 161);
-  color: white;
-}
 
-#chef {
-  background:url(https://randomuser.me/api/portraits/lego/8.jpg);
+#MYOB {
+  background:url(../docs/icons/MYOB.png);
   background-position: center;
   background-size: cover;
 }
 
-#doctor {
-  background:url(https://randomuser.me/api/portraits/lego/3.jpg);
+#RMIT {
+  background:url(../docs/icons/RMIT.png);
   background-position: center;
   background-size: cover;
 }
 
-#mexican {
-  background:url(https://randomuser.me/api/portraits/lego/6.jpg);
+#Latrobe {
+  background:url(../docs/icons/latrobe.png);
   background-position: center;
   background-size: cover;
 }
 
-#worker {
-  background:url(https://randomuser.me/api/portraits/lego/7.jpg);
+#sci {
+  background:url(../docs/icons/scidesign.png);
   background-position: center;
   background-size: cover;
 }
 
-#magician {
-  background:url(https://randomuser.me/api/portraits/lego/2.jpg);
+#douban {
+  background:url(../docs/icons/douban.png);
   background-position: center;
   background-size: cover;
 }

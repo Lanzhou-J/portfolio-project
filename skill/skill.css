@@ -141,6 +141,8 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wr
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-wrapper:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.01) translateY(-2px);
 }
 body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .top {
   /* background: yellow; */
