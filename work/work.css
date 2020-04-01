@@ -133,7 +133,7 @@ body {
 body .contentcontainer {
   margin-top: 20px;
   width: 100vw;
-  height: 1500px;
+  height: 2050px;
 }
 body .contentcontainer .titlewrapper {
   background: linear-gradient(to top, white, rgba(0, 0, 0, 0)), url(../docs/whiteleaf.jpeg);
@@ -318,6 +318,38 @@ body .sidebar {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+}
+
+footer {
+  margin-top: 15px;
+  width: 100vw;
+  height: 60px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+}
+footer .footer-links {
+  background-color: white;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+footer .footer-links img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+footer .footer-middlebox {
+  flex-grow: 1;
+}
+footer .footer-name {
+  color: white;
+  margin-right: 20px;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1100px) {

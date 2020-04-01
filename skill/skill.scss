@@ -23,7 +23,7 @@ body {
   margin-top: 20px;
   // background-color: pink;
   width: 100vw;
-  height: 1400px;
+  height: 1475px;
 
   .titlewrapper {
     background: linear-gradient(to top, rgba(255,255,255,1), rgba(0,0,0,0)),
@@ -267,11 +267,68 @@ p {
   }
   }
 
+
+footer {
+  // position: absolute;
+  // bottom:0;
+  width: 100vw;
+  margin-top: 15px;
+  height: 60px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+
+  .footer-links {
+    background-color: white;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-top: 10px;
+    }
+  }
+  .footer-middlebox {
+    flex-grow: 1;
+  }
+  .footer-name {
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+    // background-color: palegreen;
+  }
+}
+
+@media only screen and (max-width: 1305px) {
+ 	#contentcontainer {
+  margin-top: 20px;
+  // background-color: pink;
+  width: 100vw;
+  height: 1850px;
+   }
+
+}
+
 @media only screen and (max-width: 1100px) {
  	#Lanzhou {
 		font-size: 200px;
     letter-spacing: 15px;
 	}
+}
+
+@media only screen and (max-width: 870px) {
+ 	#contentcontainer {
+  margin-top: 20px;
+  // background-color: pink;
+  width: 100vw;
+  height: 2830px;
+   }
+
 }
 
 
