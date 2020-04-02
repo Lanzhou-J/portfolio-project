@@ -77,7 +77,7 @@ To view the 'color' branch, type:
 
 The website simply has all pages link to each other via the navigation bar. A sitemap for the website is presented below.
 
-![Sitemap](docs/Portfolio_Sitemap_new.png)
+![Sitemap](docs/sitemap_new_ppt.png)
 
 
 # Screenshots
