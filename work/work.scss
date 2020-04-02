@@ -1,5 +1,7 @@
 @import '../nav';
 
+
+// global setting, remove default padding and margin value
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +22,7 @@ body {
   );
   background-attachment: fixed;
 
+  // main content
   .contentcontainer {
   margin-top: 20px;
   // background-color: pink;
@@ -54,7 +57,7 @@ body {
     height: calc(1200px - 350px);
 
 
-    .blogarticlewrapper {
+    .wrapper {
       // background-color: pink;
       width:93%;
       // display: flex;
@@ -89,6 +92,7 @@ body {
           margin-top: 30px;
           // background-color: tomato;
 
+          // format cards with similar style
           .card-wrapper{
             width: 80%;
             height:200px;
@@ -199,6 +203,7 @@ body {
             }
           }
 
+          // card wrapper hover effect
           .card-wrapper:hover {
             box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
             -webkit-transform: scale(1.02);
@@ -206,6 +211,7 @@ body {
           }
         }
 
+        // resume download button
         .cvbutton {
           margin-top: 50px;
           margin-bottom: 150px;
@@ -229,7 +235,8 @@ body {
             outline: none;
             // visibility: hidden;
           }
-
+          
+          // cv button hover effect
           .cv:hover{
             border-radius: 30px;
             background: rgb(200, 200, 200);
@@ -247,6 +254,7 @@ body {
   }
 }
 
+  // sidebar on left and right
   .sidebar {
     // background-color: lightsalmon;
     width: 4%;
@@ -258,6 +266,7 @@ body {
   }
 }
 
+// style footer
 footer {
   // position: absolute;
   // bottom:0;
