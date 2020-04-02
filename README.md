@@ -133,10 +133,10 @@ Wireframes were created for each page during the planning stage of the project. 
 Tasks were tracked using Trello. Trello board screenshots presented below:
 
 ##### 1/04/2020
-![trello_4](docs/trello/Trelloboard_20200401.png)
+![trello_1](docs/trello/Trelloboard_20200401.png)
 
 ##### 2/04/2020
-![trello_5](./docs/trello/Trelloboard.png)
+![trello_2](./docs/trello/Trelloboard.png)
 
 
 
