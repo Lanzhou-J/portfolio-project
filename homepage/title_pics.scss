@@ -100,3 +100,28 @@
       }
     }
   }
+
+  @media only screen and (max-width: 1000px) {
+ 	
+   #titlepic2 {
+    display: none;
+   }
+
+   #titlepic1 {
+    display: none;
+   }
+
+  #title_subtitle {
+    width: 100%;
+    background:linear-gradient(to top, rgba(255,255,255,1), rgba(0,0,0,0)),
+    url(../docs/Blogtitlepic.jpeg);
+    background-position: center;
+    background-size: cover;
+    grid-row: 2/3;
+    grid-column: 1/ span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}

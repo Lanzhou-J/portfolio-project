@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link integrity="sha384-E60U94onEh5TB70Z1nMh2i2ScXfXFd3e3dqhkD8b4E2Ui6YU2a1XZxiRimYaotCu" rel="stylesheet" href="style.css" >
+  <link integrity="" rel="stylesheet" href="style.css" >
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
@@ -34,10 +34,10 @@
     <!-- main header with title and picture -->
     <div class="title_pics">
       <div class="title_grid">
-        <div class="title_pic1"></div>
-        <div class="title_subtitle">
+        <div id="titlepic1" class="title_pic1"></div>
+        <div class="title_subtitle" id="title_subtitle">
           <div class="title_text">
-            <h1 class="title">Hello, I'm Lanzhou Jiang.</h1>
+            <h1 class="title" id="title">Hello, I'm Lanzhou Jiang.</h1>
             <h2 class="subtitle">I love design, programming, digital painting and gardening.</h2>
           </div>
         </div>
@@ -52,9 +52,9 @@
       I used to be a bioscience PhD researcher skilled in Statistics, FACS analysis, and Confocal Microscopy. After graduation, I am pursuing an exciting new career in IT industry now. 
     </p>
     <div class="intropic" id="intropic">
-      <embed src="docs/undraw_remotely_2j6y copy.svg" type="image/svg+xml" />
-      <div class="arrow-right bounce"></div>
-      <div class="timeline">
+      <embed id="remote_pic" src="docs/undraw_remotely_2j6y copy.svg" type="image/svg+xml" />
+      <div class="arrow-right bounce" id="arrow-right"></div>
+      <div class="timeline" id="timeline">
         <div class="textwrapper">
         <h3 class="work" id="worktext">Working Experience</h3></div>
         <div class="svg">
@@ -101,7 +101,7 @@
       I am passionate about IT technology, especially software development. I think IT technology shaped the modern world that we live in. 
     </p>
     <div class="skillstack">
-      <div class="skillpicwrapper">
+      <div class="skillpicwrapper" id="svganimation">
         <!-- svg animation of skills -->
         <svg class="html" xmlns="http://www.w3.org/2000/svg">
           <text id="html" y="50" x="400">HTML
@@ -130,7 +130,7 @@
           <animate attributeName="opacity" from="0" to="1" begin="0s" dur="3.2s" repeatCount="indefinite" />
           </text>
         </svg>  
-        <div class="skillbuttonwrap">
+        <div class="skillbuttonwrap" id="skillbuttonwrap">
           <button id="skillbutton" class="skillbutton" type="button" onclick="window.location.href = 'skill/skill.html';">Find out more</button>
         </div>
       </div>
@@ -143,7 +143,7 @@
       I enjoy making art and creating things using my skills. I also enjoy cooking and gardening at home.
     </p>
     <div class="blogpic">
-      <embed id="flowerspic" src="docs/undraw_flowers_vx06.svg" type="image/svg+xml">
+      <embed class="flowerspic" id="flowerspic" src="docs/undraw_flowers_vx06.svg" type="image/svg+xml">
     </div>
     <div class="blogbuttonwrap">
       <button id="blogbutton" class="blogbutton" type="button" onclick="window.location.href = 'blog/blog.html';">Read my blogs</button>

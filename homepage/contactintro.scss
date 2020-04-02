@@ -97,3 +97,36 @@
     }
   }
 }
+
+
+
+@media only screen and (max-width: 1000px) {
+#contacttext {
+    width: 50%;
+    padding:25px;
+    margin-bottom: 25px;
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(63,63,63);
+    visibility: display;
+    // background-color: gray;
+    padding:0px 25px 0px;
+  }
+
+  .contactslideup {
+    animation-name: contactslideup;
+    -webkit-animation-name: blogintroslideup;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+    width: 50%;
+    padding:0px 25px 0px;
+    margin-bottom: 25px;
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(63,63,63);
+    // background-color: gray;
+  }
+}
