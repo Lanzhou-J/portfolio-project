@@ -1,5 +1,6 @@
 @import '../nav';
 
+// global setting, remove default padding and margin value
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +21,7 @@ body {
   );
   background-attachment: fixed;
 
+   // main content
   .contentcontainer {
   margin-top: 20px;
   // background-color: pink;
@@ -72,10 +74,12 @@ body {
 
     }
 
+    // subtitle hover effect
     .subtitle:hover {
       cursor: pointer;
     }
 
+    // grid that contain blog articles and titles
     .blogarticle_grid {
       width: 100%;
       // background-color: rgb(198, 220, 198);
@@ -163,6 +167,8 @@ body {
       }
     }
   }
+
+  // style sidebar with keywords
   .sidebar {
     // background-color: lightsalmon;
     width: 7%;
@@ -193,7 +199,7 @@ body {
 }
 }
 
-
+// stle different blog articls
 .welcome_paragraph {
   display: flex;
   flex-direction: column;
@@ -348,6 +354,7 @@ body {
   
 }
 
+// style bottom footer bar
 footer {
   // position: absolute;
   // bottom:0;

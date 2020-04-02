@@ -157,10 +157,10 @@ body .contentcontainer .contentwrapper {
   display: flex;
   height: calc(1200px - 350px);
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper {
+body .contentcontainer .contentwrapper .wrapper {
   width: 93%;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .subtitle {
+body .contentcontainer .contentwrapper .wrapper .subtitle {
   width: 100%;
   height: 100px;
   letter-spacing: 15px;
@@ -168,12 +168,12 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .subtitle {
   justify-content: center;
   align-items: center;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle {
+body .contentcontainer .contentwrapper .wrapper .blogarticle {
   width: 100%;
   height: 90%;
   margin-bottom: 15px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container {
   display: flex;
   flex-wrap: wrap;
   align-content: space-evenly;
@@ -182,7 +182,7 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-co
   margin-bottom: 25px;
   margin-top: 30px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper {
   width: 80%;
   height: 200px;
   background-color: white;
@@ -195,98 +195,98 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-co
   border-radius: 30px;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card {
   font-family: Arial, Helvetica, sans-serif;
   width: 98%;
   height: 96%;
   display: flex;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .left {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left {
   width: 30%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .left .icon {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left .icon {
   width: 85px;
   height: 85px;
   margin-top: 30px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .left #MYOB {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #MYOB {
   background: url(../docs/icons/MYOB.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .left #RMIT {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #RMIT {
   background: url(../docs/icons/RMIT.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .left #Latrobe {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #Latrobe {
   background: url(../docs/icons/latrobe.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .left #sci {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #sci {
   background: url(../docs/icons/scidesign.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .left #douban {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #douban {
   background: url(../docs/icons/douban.png);
   background-position: center;
   background-size: cover;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .right {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right {
   width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .right .text {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text {
   width: 95%;
   height: 80%;
   color: #3f3f3f;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .right .text .heading {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 5px;
   margin-top: 8px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .title {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 19px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .company_time {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .company_time {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 17px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .duration_location {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .duration_location {
   letter-spacing: 1.2px;
   font-size: 17px;
   color: gray;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper .card .right .text .detail {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .detail {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 17.5px;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .card-container .card-wrapper:hover {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper:hover {
   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
   -webkit-transform: scale(1.02);
   transform: scale(1.01) translateY(-2px);
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .cvbutton {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .cvbutton {
   margin-top: 50px;
   margin-bottom: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .cvbutton .cv {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .cvbutton .cv {
   height: 50px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -301,12 +301,12 @@ body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .cvbutto
   width: 180px;
   outline: none;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .cvbutton .cv:hover {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .cvbutton .cv:hover {
   border-radius: 30px;
   background: #c8c8c8;
   color: #282828;
 }
-body .contentcontainer .contentwrapper .blogarticlewrapper .blogarticle .cvbutton .cv:active {
+body .contentcontainer .contentwrapper .wrapper .blogarticle .cvbutton .cv:active {
   border-radius: 30px;
   background: #606060;
   color: white;

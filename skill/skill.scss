@@ -1,5 +1,6 @@
 @import '../nav';
 
+// global setting, remove default padding and margin value
 * {
   padding: 0;
   margin: 0;
@@ -19,6 +20,7 @@ body {
   );
   background-attachment: fixed;
 
+  // main content
   .contentcontainer {
   margin-top: 20px;
   // background-color: pink;
@@ -84,7 +86,8 @@ body {
         margin-bottom: 50px;
         // background-color: tomato;
       }
-
+      
+      // style personality keywords
       .personality_container {
           width: 100%;
           height: 150px;
@@ -113,6 +116,7 @@ body {
           }
         }
 
+// format cards with similar style
 .card-wrapper{
 	width: 380px;
   height:350px;
@@ -254,6 +258,8 @@ p {
       }
     }
   }
+
+  // sidebar on left and right
   .sidebar {
     // background-color: lightsalmon;
     width: 4%;
@@ -267,7 +273,7 @@ p {
   }
   }
 
-
+// style footer
 footer {
   // position: absolute;
   // bottom:0;
