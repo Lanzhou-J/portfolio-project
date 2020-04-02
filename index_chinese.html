@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" >
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <!-- <link rel="prefetch" href="https://v7.res.dandyweng.com/fonts/SourceHanSerifCN-SemiBold.woff2"> -->
+  <title>蒋兰舟的个人主页</title>
+</head>
+
+<body>
+  <header>
+    <!-- navbar menu -->
+    <nav class="nav" id="blur">
+      <div class="linkwrapper">
+        <a href="#titlepic2" class="links about">关于我</a>
+        <a href="work/work.html" class="links experience">工作经历</a>
+        <a href="skill/skill.html" class="links skills">技能</a>
+        <a href="blog/blog.html" class="links blog">博客</a>
+      </div>
+      <div class="middlespan"></div>
+      <div class="buttonwrapper">
+        <a href="index.html"><button class="chinese">English</button></a>
+      </div>
+    </nav>
+
+    <!-- navbar menu filter (frosted glass) -->
+    <div id="body"></div>
+
+    <div class="title_pics">
+      <div class="title_grid">
+        <div class="title_pic1"></div>
+        <div class="title_subtitle">
+          <div class="title_text">
+            <h1 class="title" style="font-family: STFangsong;">你好，我是蒋兰舟</h1>
+            <h2 class="subtitle" style="font-family: STFangsong;">我爱设计，编程，数码绘画和园艺。</h2>
+          </div>
+        </div>
+        <div id="titlepic2" class="title_pic2"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- introduction section with interactive work experience illustration -->
+  <section class="introwrapper">
+    <p class="intro" id="introtext" style="font-family: STFangsong; line-height: 35px;"> 
+      我以前是一个生物科学博士研究生，精通统计，流式细胞术，共聚焦显微镜。毕业后，由于对IT的兴趣，我开始了一段新的旅程……
+    </p>
+    <div class="intropic" id="intropic" >
+      <embed src="docs/undraw_remotely_2j6y copy.svg" type="image/svg+xml" />
+      <div class="arrow-right bounce"></div>
+      <div class="timeline">
+        <div class="textwrapper">
+        <h3 class="work" id="worktext" style="font-family:STFangsong ">工作经历</h3></div>
+        <div class="svg">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 100" id="line-svg">
+	        <path fill="none" stroke="gray" stroke-width="4" id="line-path" d="M0 0 H 2000"/>
+        </svg>
+        <div class="a year" id="a" >2015-2019
+          <p style="font-family: STFangsong;">博士研究生</p>
+        </div>
+        <div class="b year" id="b">2017-2018
+          <p style="font-family: STFangsong;">助教</p>
+        </div>
+        <div class="c year" id="c">2018
+          <p style="font-family: STFangsong;">科普写作者</p>
+        </div>
+        <div class="d year" id="d">2019-2020
+          <p style="font-family: STFangsong;">数据科学家</p>
+        </div>
+
+        <div class="scientist">
+          <embed class = "jobpic" id="apic" src="docs/undraw_science_fqhl.svg" type="image/svg+xml">
+        </div>
+        <div class="demonstrator">
+          <embed class = "jobpic" id="bpic" src="docs/undraw_teacher_35j2.svg" type="image/svg+xml">
+        </div>
+        <div class="writer">
+          <embed class = "jobpic" id="cpic" src="docs/undraw_wall_post_83ul.svg" type="image/svg+xml">
+        </div>
+        <div  class="datascientist">
+          <embed class = "jobpic" id="dpic" src="docs/undraw_design_data_khdb.svg" type="image/svg+xml">
+        </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="button">
+      <button id="findjob" class="findjob" type="button" onclick="window.location.href = 'work/work.html';" style="height:42px">发现更多</button>
+    </div>
+  </section>
+
+  <!-- Brief introduction of my skills and interest in technology -->
+  <section class="skillswrapper" id="skillswrapper">
+    <p class="skillstext" id="skillstext" style="font-family: STFangsong; line-height: 35px;">
+      我对IT技术有很大的热情，尤其是软件开发。我认为IT科技塑造了我们生活的现代世界。
+    </p>
+    <div class="skillstack">
+      <div class="skillpicwrapper">
+        <!-- svg animation of skills -->
+        <svg class="html" xmlns="http://www.w3.org/2000/svg">
+          <text id="html" y="50" x="400">HTML
+          <animate attributeName="x" from="900" to="40" begin="0s" dur="6s" repeatCount="indefinite" />
+          <animate attributeName="opacity" from="1" to="0" begin="0s" dur="6s" repeatCount="indefinite" />
+          </text>
+           <text id="css" y="100" x="900">CSS
+          <animate attributeName="x" from="900" to="40" begin="0s" dur="7.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" from="1" to="0" begin="0s" dur="7.5s" repeatCount="indefinite" />
+          </text>
+          <text id="ruby" y="140" x="600">Ruby
+          <animate attributeName="x" from="600" to="40" begin="0s" dur="5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" from="1" to="0" begin="0s" dur="5s"
+          repeatCount="indefinite" />
+          </text>
+          <text id="python" y="120" x="600">Python
+          <animate attributeName="x" from="680" to="10" begin="0s" dur="8s" repeatCount="indefinite" />
+          <animate attributeName="opacity" from="1" to="0" begin="0s" dur="8s" repeatCount="indefinite" />
+          </text>
+          <text id="ai" y="80" x="700">Adobe Illustrator
+          <animate attributeName="x" from="850" to="8" begin="0s" dur="8.8s" repeatCount="indefinite" />
+          <animate attributeName="opacity" from="1" to="0" begin="0s" dur="8.8s" repeatCount="indefinite" />
+          </text>
+          <text id="myskillsanime" y="70" x="700">我的技术栈:
+          <animate attributeName="x" from="370" to="0" begin="0s" dur="3.2s" repeatCount="indefinite" />
+          <animate attributeName="opacity" from="0" to="1" begin="0s" dur="3.2s" repeatCount="indefinite" />
+          </text>
+        </svg>  
+        <div class="skillbuttonwrap">
+          <button id="skillbutton" class="skillbutton" type="button" onclick="window.location.href = 'skill/skill.html';" style="height:42px">发现更多</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- introduction of my blogs and personal hobbies-->  
+  </section>
+  <section class="blogintrowrapper" id="blogintrowrapper">
+    <p class="blogintrotext" id="blogintrotext" style="font-family: STFangsong; line-height: 35px;">
+     我喜欢通过自己的技术创作艺术和设计新的事物。我还很喜欢在家烹饪和做园艺。
+    </p>
+    <div class="blogpic">
+      <embed id="flowerspic" src="docs/undraw_flowers_vx06.svg" type="image/svg+xml">
+    </div>
+    <div class="blogbuttonwrap">
+      <button id="blogbutton" class="blogbutton" type="button" onclick="window.location.href = 'blog/blog.html';">阅读博客</button>
+    </div>
+  </section>
+
+  <!-- footer section with contact info and footerbar -->
+  <footer>
+
+    <!-- contact info with social media links -->
+    <div class="contactwrapper">
+    <p class="contacttext" id="contacttext" style="font-family: STFangsong; line-height: 35px;">
+      如果你对我的项目感兴趣，欢迎联系我。
+    </p>
+    <div class="socialmedia_container">
+      <div class="socialmedia" class="item">
+        <h2 style="font-family: STFangsong;">社交网络</h2>
+        <div class="item-content">
+          <a class="tag" target="_blank" rel="external" href="https://www.linkedin.com/in/lanzhou-jiang-24151788/">Linkedin @Lanzhou Jiang</a>
+          <a class="tag" target="_blank" rel="external" href="https://github.com/Lanzhou-J">Github @Lanzhou-J</a>
+          <a class="tag" target="_blank" rel="external" href="https://www.facebook.com/lanzhou.jiang?ref=bookmarks">Facebook @Lanzhou Jiang</a>
+        </div>
+      </div>
+      <div class="email">
+        <h3 style="font-family: STFangsong;">电子邮件：</h3>
+        <p>lzjiang99@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- bottom footbar -->
+    <div class="bottom_footer">
+      <div class="footer-links">
+        <div class="footer-link">
+          <a href="../index_chinese.html"><img src="../docs/icons/舟2.png" alt="logo image"></a>
+        </div>
+      </div>
+      <div class='footer-middlebox'></div>
+      <div class="footer-name">
+        <p>Made with ❤<i class="fas"></i> &copy; Lanzhou Jiang 2020</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!-- Add JavaScript to HTML -->
+<script type="text/javascript" src="scroll.js"></script>
+</html>

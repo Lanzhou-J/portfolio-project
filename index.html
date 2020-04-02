@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,27 @@
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   <title>I'm Lanzhou Jiang</title>
 </head>
+
 <body>
   <header>
+    <!-- navbar menu -->
     <nav class="nav" id="blur">
       <div class="linkwrapper">
-        <a href="#titlepic2" class="about">About</a>
-        <a href="#intropic" class="experience">Experience</a>
-        <a href="#skillswrapper" class="skills">Skills</a>
-        <a href="blog/blog.html" class="blog">Blog</a>
+        <a href="#titlepic2" class="links about">About</a>
+        <a href="work/work.html" class="links experience">Experience</a>
+        <a href="skill/skill.html" class="links skills">Skills</a>
+        <a href="blog/blog.html" class="links blog">Blog</a>
       </div>
       <div class="middlespan"></div>
       <div class="buttonwrapper">
-        <button class="chinese">中文版</button>
+        <a href="index_chinese.html"><button class="chinese">中文版</button></a>
       </div>
     </nav>
+
+    <!-- navbar menu filter (frosted glass) -->
     <div id="body"></div>
 
+    <!-- main header with title and picture -->
     <div class="title_pics">
       <div class="title_grid">
         <div class="title_pic1"></div>
@@ -38,6 +44,8 @@
       </div>
     </div>
   </header>
+
+  <!-- introduction section with interactive work experience illustration -->
   <section class="introwrapper">
     <p class="intro" id="introtext">
       I used to be a bioscience PhD researcher skilled in Statistics, FACS analysis, and Confocal Microscopy. After graduation, I am pursuing an exciting new career in IT industry now. 
@@ -82,22 +90,24 @@
     </div>
     </div>
     <div class="button">
-      <button id="findjob" class="findjob" type="button">Find out more</button>
+      <button id="findjob" class="findjob" type="button" onclick="window.location.href = 'work/work.html';">Find out more</button>
     </div>
   </section>
 
+  <!-- Brief introduction of my skills and interest in technology -->
   <section class="skillswrapper" id="skillswrapper">
     <p class="skillstext" id="skillstext">
       I am passionate about IT technology, especially software development. I think IT technology shaped the modern world that we live in. 
     </p>
     <div class="skillstack">
       <div class="skillpicwrapper">
+        <!-- svg animation of skills -->
         <svg class="html" xmlns="http://www.w3.org/2000/svg">
           <text id="html" y="50" x="400">HTML
           <animate attributeName="x" from="900" to="40" begin="0s" dur="6s" repeatCount="indefinite" />
           <animate attributeName="opacity" from="1" to="0" begin="0s" dur="6s" repeatCount="indefinite" />
           </text>
-           <text id="css" y="100" x="900">CSS
+          <text id="css" y="100" x="900">CSS
           <animate attributeName="x" from="900" to="40" begin="0s" dur="7.5s" repeatCount="indefinite" />
           <animate attributeName="opacity" from="1" to="0" begin="0s" dur="7.5s" repeatCount="indefinite" />
           </text>
@@ -120,12 +130,13 @@
           </text>
         </svg>  
         <div class="skillbuttonwrap">
-          <button id="skillbutton" class="skillbutton" type="button">Find out more</button>
+          <button id="skillbutton" class="skillbutton" type="button" onclick="window.location.href = 'skill/skill.html';">Find out more</button>
         </div>
       </div>
-
     </div>
   </section>
+
+  <!-- introduction of my blogs and personal hobbies-->
   <section class="blogintrowrapper" id="blogintrowrapper">
     <p class="blogintrotext" id="blogintrotext">
       I enjoy making art and creating things using my skills. I also enjoy cooking and gardening at home.
@@ -137,30 +148,46 @@
       <button id="blogbutton" class="blogbutton" type="button" onclick="window.location.href = 'blog/blog.html';">Read my blogs</button>
     </div>
   </section>
+
+  <!-- footer section with contact info and footerbar -->
   <footer>
+
+    <!-- contact info with social media links -->
     <div class="contactwrapper">
-    <p class="contacttext" id="contacttext">
-      If you are interested, feel free to contact me.
-    </p>
-    <div class="socialmedia_container">
-      <div class="socialmedia" class="item">
-        <h2>Social-media</h2>
-        <div class="item-content">
-          <a class="tag" target="_blank" rel="external" href="https://www.linkedin.com/in/lanzhou-jiang-24151788/">Linkedin @Lanzhou Jiang</a>
-          <a class="tag" target="_blank" rel="external" href="https://github.com/Lanzhou-J">Github @Lanzhou-J</a>
-          <a class="tag" target="_blank" rel="external" href="https://www.facebook.com/lanzhou.jiang?ref=bookmarks">Facebook @Lanzhou Jiang</a>
+      <p class="contacttext" id="contacttext">
+        If you are interested, feel free to contact me.
+      </p>
+      <div class="socialmedia_container">
+        <div class="socialmedia" class="item">
+          <h2>Social-media</h2>
+          <div class="item-content">
+            <a class="tag" target="_blank" rel="external" href="https://www.linkedin.com/in/lanzhou-jiang-24151788/">Linkedin @Lanzhou Jiang</a>
+            <a class="tag" target="_blank" rel="external" href="https://github.com/Lanzhou-J">Github @Lanzhou-J</a>
+            <a class="tag" target="_blank" rel="external" href="https://www.facebook.com/lanzhou.jiang?ref=bookmarks">Facebook @Lanzhou Jiang</a>
+          </div>
+        </div>
+        <div class="email">
+          <h3>Email:</h3>
+          <p>lzjiang99@gmail.com</p>
         </div>
       </div>
-      <div class="email">
-        <h3>Email:</h3>
-        <p>lzjiang99@gmail.com</p>
+    </div>
+  
+    <!-- bottom footbar -->
+    <div class="bottom_footer">
+      <div class="footer-links">
+        <div class="footer-link">
+          <a href="../index.html"><img src="../docs/icons/舟2.png" alt="logo image"></a>
+        </div>
+      </div>
+      <div class='footer-middlebox'></div>
+      <div class="footer-name">
+        <p>Made with ❤<i class="fas"></i> &copy; Lanzhou Jiang 2020</p>
       </div>
     </div>
-  </div>
-
-  </footer>
-  
-  
+  </footer>  
 </body>
+
+<!-- Add JavaScript to HTML -->
 <script type="text/javascript" src="scroll.js"></script>
 </html>

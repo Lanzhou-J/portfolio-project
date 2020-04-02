@@ -1,0 +1,441 @@
+#body {
+  height: 64px;
+  width: 100vw;
+  padding-right: 16px;
+  margin-left: -8px;
+  margin-top: -8px;
+  transition: left 1.2s ease;
+  background: inherit;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  z-index: 999;
+}
+
+nav {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  background: rgba(253, 253, 253, 0.45);
+  height: 70px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 2;
+}
+nav .linkwrapper {
+  margin-left: 15px;
+  display: flex;
+}
+nav .linkwrapper .links {
+  text-decoration: none;
+  color: gray;
+  border-right: solid gray thin;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: background 0.4s, text-shadow 0.4s;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav .linkwrapper .links:hover {
+  background: rgba(253, 253, 253, 0.3);
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+nav .linkwrapper .blog {
+  border-right: none;
+}
+nav .middlespan {
+  flex-grow: 1;
+}
+nav button {
+  font-size: 15px;
+  background-color: white;
+  margin-right: 35px;
+  margin-left: 15px;
+  padding: 3px 8px 3px 8px;
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav button:hover {
+  background-color: #fdfdfd;
+}
+
+@media only screen and (max-width: 520px) {
+  .chinese {
+    font-size: 12px;
+    padding: 1.5px 4.5px 1.5px 4.5px;
+  }
+
+  .about, .experience, .skills, .blog {
+    font-size: 14px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .chinese {
+    font-size: 9px;
+    padding: 1.5px 4.5px 1.5px 4.5px;
+  }
+
+  .links {
+    font-size: 13px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .chinese {
+    font-size: 7.5px;
+    padding: 1.5px 2.5px 1.5px 2.5px;
+  }
+
+  .links {
+    font-size: 13px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media only screen and (max-width: 325px) {
+  .chinese {
+    font-size: 6px;
+    padding: 1.5px 2px 1.5px 2px;
+    margin-left: 0px;
+    margin-right: 5px;
+    border: 1px;
+  }
+
+  .links {
+    font-size: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+body {
+  font-size: 25px;
+  color: black;
+  background-color: #fdfdfd;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 1800px;
+  background: linear-gradient(to bottom, white 80%, lightgray);
+  background-attachment: fixed;
+}
+body .contentcontainer {
+  margin-top: 20px;
+  width: 100vw;
+  height: 2050px;
+}
+body .contentcontainer .titlewrapper {
+  background: linear-gradient(to top, white, rgba(0, 0, 0, 0)), url(../docs/whiteleaf.jpeg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .contentcontainer .titlewrapper .title {
+  font-size: 220px;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding-top: 0px;
+  padding-left: 0px;
+  color: #3f3f3f;
+  letter-spacing: 60px;
+}
+body .contentcontainer .contentwrapper {
+  display: flex;
+  height: calc(1200px - 350px);
+}
+body .contentcontainer .contentwrapper .wrapper {
+  width: 93%;
+}
+body .contentcontainer .contentwrapper .wrapper .subtitle {
+  width: 100%;
+  height: 100px;
+  letter-spacing: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle {
+  width: 100%;
+  height: 90%;
+  margin-bottom: 15px;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  max-width: 100%;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper {
+  width: 80%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  border-width: thin;
+  margin: 12px;
+  justify-content: center;
+  align-items: center;
+  border-top: rgba(148, 148, 148, 0.4) dashed thin;
+  border-radius: 30px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 98%;
+  height: 96%;
+  display: flex;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left .icon {
+  width: 85px;
+  height: 85px;
+  margin-top: 30px;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #MYOB {
+  background: url(../docs/icons/MYOB.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #RMIT {
+  background: url(../docs/icons/RMIT.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #Latrobe {
+  background: url(../docs/icons/latrobe.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #sci {
+  background: url(../docs/icons/scidesign.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .left #douban {
+  background: url(../docs/icons/douban.png);
+  background-position: center;
+  background-size: cover;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text {
+  width: 95%;
+  height: 80%;
+  color: #3f3f3f;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 8px;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19px;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .company_time {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .heading .duration_location {
+  letter-spacing: 1.2px;
+  font-size: 17px;
+  color: gray;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper .card .right .text .detail {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17.5px;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .card-container .card-wrapper:hover {
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.01) translateY(-2px);
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .cvbutton {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .cvbutton .cv {
+  height: 50px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #3f3f3f;
+  border: none;
+  color: white;
+  padding: 0px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 30px;
+  width: 180px;
+  outline: none;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .cvbutton .cv:hover {
+  border-radius: 30px;
+  background: #c8c8c8;
+  color: #282828;
+}
+body .contentcontainer .contentwrapper .wrapper .blogarticle .cvbutton .cv:active {
+  border-radius: 30px;
+  background: #606060;
+  color: white;
+}
+body .sidebar {
+  width: 4%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer {
+  margin-top: 15px;
+  width: 100vw;
+  height: 60px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+}
+footer .footer-links {
+  background-color: white;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+footer .footer-links img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+footer .footer-middlebox {
+  flex-grow: 1;
+}
+footer .footer-name {
+  color: white;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 1100px) {
+  #Lanzhou {
+    font-size: 200px;
+    letter-spacing: 15px;
+  }
+
+  #detail {
+    font-size: 15px;
+  }
+
+  .blogsubtitle {
+    letter-spacing: 7px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  #card_wrapper {
+    width: 93%;
+    height: 216px;
+  }
+
+  .right {
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  #titlewrapper {
+    height: 200px;
+  }
+
+  #douban, #sci, #Latrobe, #RMIT, #MYOB {
+    width: 70px;
+    height: 70px;
+  }
+
+  #title {
+    font-size: 16px;
+  }
+
+  #heading {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  #graytext {
+    font-size: 13px;
+  }
+
+  #Lanzhou {
+    font-size: 100px;
+    letter-spacing: 12px;
+  }
+
+  #detail {
+    font-size: 13.5px;
+  }
+
+  #card_wrapper {
+    width: 95%;
+    height: 230px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #Lanzhou {
+    font-size: 85px;
+    letter-spacing: 7.5px;
+  }
+
+  #graytext {
+    font-size: 11.5px;
+  }
+
+  #heading {
+    margin-bottom: 0px;
+    margin-top: 3px;
+  }
+
+  #detail {
+    font-size: 11.5px;
+  }
+
+  #card_wrapper {
+    width: 98%;
+    height: 230px;
+  }
+}
+
+/*# sourceMappingURL=work.css.map */
