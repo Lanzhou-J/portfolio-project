@@ -174,14 +174,14 @@ nav button:hover {
   margin-top: 30px;
   text-align: left;
   font-size: 50px;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Lobster Two", cursive;
   width: 100%;
   color: #3f3f3f;
 }
 .title_pics .title_grid .title_subtitle .title_text h2 {
   text-align: left;
   font-size: 40px;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Lobster Two", cursive;
   width: 100%;
   color: #3f3f3f;
 }
@@ -205,7 +205,7 @@ nav button:hover {
   margin-top: 50px;
   font-size: 0.9em;
   text-align: justify;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
   color: #3f3f3f;
   visibility: hidden;
 }
@@ -220,7 +220,7 @@ nav button:hover {
   margin-top: 50px;
   font-size: 0.9em;
   text-align: justify;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
   color: #3f3f3f;
 }
 @keyframes introslideup {
@@ -522,7 +522,7 @@ nav button:hover {
   margin-top: 50px;
   font-size: 0.9em;
   text-align: justify;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
   color: #3f3f3f;
   visibility: hidden;
 }
@@ -537,7 +537,7 @@ nav button:hover {
   margin-top: 50px;
   font-size: 0.9em;
   text-align: justify;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
   color: #3f3f3f;
 }
 @keyframes skillslideup {
@@ -626,7 +626,7 @@ nav button:hover {
   margin-top: 100px;
   font-size: 0.9em;
   text-align: justify;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
   color: #3f3f3f;
   visibility: hidden;
   padding: 0px 25px 0px;
@@ -642,7 +642,7 @@ nav button:hover {
   margin-top: 40px;
   font-size: 0.9em;
   text-align: justify;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
   color: #3f3f3f;
 }
 @keyframes blogintroslideup {
@@ -711,7 +711,7 @@ nav button:hover {
   margin-bottom: 25px;
   font-size: 0.9em;
   text-align: center;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
   color: #3f3f3f;
   visibility: hidden;
   padding: 0px 25px 0px;
@@ -727,7 +727,7 @@ nav button:hover {
   margin-bottom: 25px;
   font-size: 0.9em;
   text-align: center;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Patrick Hand SC", cursive;
   color: #3f3f3f;
 }
 @keyframes contactslideup {
