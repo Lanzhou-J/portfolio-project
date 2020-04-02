@@ -53,9 +53,11 @@ My pdf resume opens in a different tab in the browser. This enables users to con
 All the webpages use a consistent design style, including components, fonts, and colors.
 
 ### Responsive Design
+All 5 pages are designed following responsive web design rules.
+
 The navigation bar and footer bar are designed to be responsive so that users with different mobile device are able to use the links and buttons easily.
 
-For Experience and Skills webpage, I used flex cards to structure the contents including working experience, different category of personal skills and personality keywords. I have used media query to help change font size and width/height of different sections to make the pages display all components at desktop, mobile, and tablet viewport widths.
+For Experience and Skills webpage, I used flex cards to structure the contents including working experience, different category of personal skills and personality keywords. I have modified the strucure of Homepage and Blog page to make them all responsive and fit all screen sizes. I have used media query to help change font size and width/height of different sections to make the pages display all components at desktop, mobile, and tablet viewport widths.
 
 ### Three Versions
 
@@ -136,7 +138,7 @@ Tasks were tracked using Trello. Trello board screenshots presented below:
 ![trello_1](docs/trello/Trelloboard_20200401.png)
 
 ##### 2/04/2020
-![trello_2](./docs/trello/Trelloboard.png)
+![trello_2](./docs/trello/Trelloboardnew.png)
 
 
 
