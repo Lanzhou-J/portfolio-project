@@ -176,14 +176,14 @@ nav button:hover {
   font-size: 50px;
   font-family: "Open Sans Condensed", sans-serif;
   width: 100%;
-  color: #3f3f3f;
+  color: white;
 }
 .title_pics .title_grid .title_subtitle .title_text h2 {
   text-align: left;
   font-size: 40px;
   font-family: "Open Sans Condensed", sans-serif;
   width: 100%;
-  color: #3f3f3f;
+  color: white;
 }
 
 * {
@@ -206,7 +206,7 @@ nav button:hover {
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #3f3f3f;
+  color: white;
   visibility: hidden;
 }
 .introwrapper .introslideup {
@@ -221,7 +221,7 @@ nav button:hover {
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #3f3f3f;
+  color: white;
 }
 @keyframes introslideup {
   0% {
@@ -294,6 +294,7 @@ nav button:hover {
   height: 50%;
   display: flex;
   align-items: flex-end;
+  color: white;
 }
 .introwrapper .intropic .timeline .textwrapper .appear {
   animation-name: appear;
@@ -327,6 +328,7 @@ nav button:hover {
   height: 25%;
   visibility: hidden;
   margin-bottom: 0px;
+  color: white;
 }
 .introwrapper .intropic .timeline .svg {
   height: 50%;
@@ -341,9 +343,10 @@ nav button:hover {
 }
 .introwrapper .intropic .timeline .svg .year {
   font-size: 20px;
-  border-right: gray solid thin;
+  border-right: white solid thin;
   visibility: hidden;
   padding-right: 8px;
+  color: white;
 }
 .introwrapper .intropic .timeline .svg .yearappear {
   animation-name: appear;
@@ -353,8 +356,9 @@ nav button:hover {
   visibility: visible;
   font-size: 20px;
   font-weight: bold;
-  border-right: gray solid thin;
+  border-right: white solid thin;
   padding-right: 8px;
+  color: white;
 }
 @keyframes yearappear {
   0% {
@@ -409,6 +413,7 @@ nav button:hover {
   visibility: hidden;
 }
 .introwrapper .intropic .timeline .svg .scientist embed {
+  background-color: white;
   border-radius: 50%;
   border: solid lightgray thin;
   margin-left: 68%;
@@ -446,9 +451,9 @@ nav button:hover {
   height: 40px;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #3f3f3f;
+  background-color: white;
   border: none;
-  color: white;
+  color: #3f3f3f;
   padding: 12px 30px;
   text-align: center;
   text-decoration: none;
@@ -471,9 +476,9 @@ nav button:hover {
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 20%;
-  background-color: gray;
+  background-color: white;
   border: none;
-  color: white;
+  color: #3f3f3f;
   padding: 12px 15px;
   text-align: center;
   text-decoration: none;
@@ -523,7 +528,7 @@ nav button:hover {
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #3f3f3f;
+  color: white;
   visibility: hidden;
 }
 .skillswrapper .skillslideup {
@@ -538,7 +543,7 @@ nav button:hover {
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #3f3f3f;
+  color: white;
 }
 @keyframes skillslideup {
   0% {
@@ -627,7 +632,7 @@ nav button:hover {
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #3f3f3f;
+  color: white;
   visibility: hidden;
   padding: 0px 25px 0px;
 }
@@ -643,7 +648,7 @@ nav button:hover {
   font-size: 0.9em;
   text-align: justify;
   font-family: "Open Sans Condensed", sans-serif;
-  color: #3f3f3f;
+  color: white;
 }
 @keyframes blogintroslideup {
   0% {
@@ -797,7 +802,7 @@ body {
   background-color: #fdfdfd;
   font-family: Arial, Helvetica, sans-serif;
   height: 4150px;
-  background: linear-gradient(to bottom, white 60%, lightgray);
+  background: linear-gradient(to bottom, gray 60%, white);
 }
 
 .bottom_footer {

@@ -19,7 +19,8 @@
     font-size: 0.9em;
     text-align: justify;
     font-family: 'Open Sans Condensed', sans-serif;
-    color: rgb(63,63,63);
+    // color: rgb(63,63,63);
+    color: white;
     visibility: hidden;
     // background-color: gray;
   }
@@ -36,7 +37,8 @@
     font-size: 0.9em;
     text-align: justify;
     font-family: 'Open Sans Condensed', sans-serif;
-    color: rgb(63,63,63);
+    // color: rgb(63,63,63);
+    color: white;
   }
 
   @keyframes introslideup {
@@ -122,6 +124,7 @@
         height: 50%;
         display: flex;
         align-items: flex-end;
+        color: white;
         // background-color: white;
 
       .appear {
@@ -158,6 +161,7 @@
         height: 25%;
         visibility: hidden;
         margin-bottom: 0px;
+        color: white;
       }
     }
       .svg {
@@ -175,9 +179,11 @@
 
         .year {
           font-size: 20px;
-          border-right: gray solid thin;
+          // border-right: gray solid thin;
+          border-right: white solid thin;
           visibility: hidden;
           padding-right: 8px;
+          color: white;
         }
 
         .yearappear {
@@ -188,8 +194,10 @@
           visibility: visible;
           font-size: 20px;
           font-weight: bold;
-          border-right: gray solid thin;
+          // border-right: gray solid thin;
+          border-right: white solid thin;
           padding-right: 8px;
+          color: white;
       }
 
         @keyframes yearappear {
@@ -252,6 +260,7 @@
         }
 
         .scientist embed {
+          background-color: white;
           border-radius: 50%;
           border: solid lightgray thin;
           margin-left: 68%;
@@ -293,9 +302,11 @@
     height: 40px;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(63,63,63); 
+    // background-color: rgb(63,63,63); 
+    background-color: white;
     border: none;
-    color: white;
+    // color: white;
+    color: rgb(63, 63, 63);
     padding: 12px 30px;
     text-align: center;
     text-decoration: none;
@@ -319,9 +330,10 @@
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 20%;
-    background-color: gray; 
+    // background-color: gray; 
+    background-color: white;
     border: none;
-    color: white;
+    color: rgb(63, 63, 63);
     padding: 12px 15px;
     text-align: center;
     text-decoration: none;
