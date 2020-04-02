@@ -360,3 +360,125 @@
     }
 }
 
+@media only screen and (max-width: 1100px) {
+    #remote_pic {
+    width: 155px;
+    height: 155px;
+    margin-left: -30px;
+  }
+}
+
+
+@media only screen and (max-width: 1000px) {
+ 	
+  #introtext {
+    width: 50%;
+    padding:25px;
+    margin-top: 50px;
+    font-size: 0.8em;
+    text-align: justify;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(63,63,63);
+    visibility: display;
+    // background-color: gray;
+  }
+
+  .introslideup {
+    animation-name: introslideup;
+    -webkit-animation-name: introslideup;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+    width: 50%;
+    padding:25px;
+    margin-top: 50px;
+    font-size: 0.8em;
+    text-align: justify;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: rgb(63,63,63);
+  }
+
+  #remote_pic {
+    width: 150px;
+    height: 150px;
+    margin-left: -50px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  #worktext {
+    font-size: 18px;
+  }
+
+  #a, #b, #c, #d {
+    font-size: 10px;
+  }
+
+  #remote_pic {
+    width: 120px;
+    height: 120px;
+    margin-left: -60px;
+  }
+
+  #arrow-right {
+      box-sizing: content-box;
+      height: 0px;
+      width: 0px;
+      margin-left: 20px;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid rgb(63, 63, 63);
+      // background-color: lightcoral;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+  #worktext {
+    font-size: 14px;
+  }
+
+  #a, #b, #c, #d {
+    font-size: 10px;
+  }
+
+ #intropic {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   width: 100vw;
+   margin-left: -10px;
+  //  height: 400px;
+  //  width: 100vw
+
+  // align-items: center;
+
+  #remote_pic {
+    width: 120px;
+    height: 120px;
+    margin-left: 0px;
+  }
+
+  #arrow-right {
+    display: none;
+  }
+
+  #timeline {
+      width: 80vw;
+      height: 300px;
+      
+      #apic, #bpic, #cpic, #dpic{
+          width:65%;
+          height: 12vw;
+      }
+      
+      }
+
+
+  
+ }
+
+}
+
