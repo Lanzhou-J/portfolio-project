@@ -15,171 +15,146 @@ Besides, the website itself is a good example of my front end technology skills 
 
 # Functionality and Features
 
-### Component 1: Navigation Bar/Footer Bar/multilingual versions of homepage
+### Component 1: Navigation Bar and Footer Bar
 
-All the webpages have navigation bar and footer bar with similar style. For navigation bar, I used translucent frosted glass filter. The links on the left side of navigation bar will link to different websites (e.g. Working experience website/ Skills website/ Blog website), and the gray button on the right side of navigation bar will link visitors to a Chinese version of the homepage with the same information and the same style. By offering content in a different language, the portfolio website can reach a broader audience and target more locations. I choose Chinese because currently I am confident in translating the content into Chinese and Chinese is one of the most common languages used on the Internet. (Translating the webpage into other languages is a potential function to be released in the future.)
+All 5 webpages have navigation bar and footer bar with similar style. For navigation bar, I used translucent frosted glass filter. All the links/buttons have hover effects. The links on the left side of navigation bar will link to different websites (e.g. Working experience website/ Skills website/ Blog website) and the gray button on the right side of navigation bar will link visitors to a Chinese version of the homepage.
 
 For footer bar I used gray background and white icon/text, the icon at the left side is my name "zhou" (meaning "boat") in ancient Chinese character. The icon will link users back to the homepage (or back to the top of the homepage).
 
 In the homepage footer section I have included links to my Linkedin, Github and Facebook account. I have also provided my email address. This will provide users with additional information, and allow them to contact me if interested.
 
-#### Sitemap
-#### Screenshots
-#### Target audience
-#### Tech stack
-* html
-* css
-* Netlify
+### Component 2: Multilingual versions of homepage
 
+As mentioned before, the navigation bar has a button to link users to the Chinese homepage. By offering content in a different language, the portfolio website can reach a broader audience and target more locations. I choose Chinese because currently I am confident in translating the content into Chinese. (Translating the webpage into other languages is a potential function to be released in the future.) 
 
+### Component 3: Interactive homepage/ On scroll animation
 
+My design inspiration is originated from Chinese landscape painting. Cloud and mist is a very important element in the artwork. Usually a veil of cloud or mist across the landscape is used to add mystery and elegance to the paintings. Imagine that you are walking in a mountain -- the mist comes near and goes away, and the scenary in front of you is changing all the time which provides travellers with incredible aesthetic experience. That is the effect that I want to achieve for my personal portfolio website. I think the best way to achieve it is to use on scroll animation. Contents fade in as users scroll down, which also makes the website more interactive. The svg animation of "My skills" is also inspired by floating clouds.
 
+My pictures can be found besides title if users hover on the 2 geometric shape. I used large typography and geometric shape to give my portfolio a modern appearance.
 
+The layout of the homepage is designed like asian hanging scroll paintings. In these paitings, usually the objects are not always placed in the middle line of the artwork. I structured elements in my homepage in a sequence of "left -- middle -- right -- middle ..." so that audience will not stare at one direction when the webpage is scrolled down, which can make the website fun to read.
 
+### Component 4: Interactive blog webpage
+In the blog webpage, visitors will see a welcome message first with illustration and instruction. The welcome section will be replaced by different blog articles if visitors click on the blog titles on the left side of the website. All the blog articles contain date, pictures and text contents. The content of articles are structured using grid to give it a nice page layout.
 
+On the right side of the blog page, I created a sidebar with keywords about blog posts -- let readers know what to expect from the articles.
 
+Users can click on subtitle "BLOG" to go back to the welcome view. This design is to make the website more interacive and organized.
 
-### Component 1: Navigation Bar and Footer Bar
+### Component 5: CV Download
 
-The site will include a navigation bar, which will include links to the other main pages of the website - home, projects, blog, and CV - on each page. The navigation bar both informs visitors of the other pages available on the website, and allows them a way to visit them.
+Users can download my resume in Experience webpage, the button "Download Resume" is at the bottom of the webpage, with a hover and active CSS effect which changes the button color and font color.
 
-The navigation bar resides at the top of each page so the user will always know where they can go on each page to navigate around the website. A yellow hover effect is used on the text for each page to provide feedback to the user that the feature is interactable. The fact that yellow features are interactable will be used repeatedly on the website.
-
-A footer bar is included with links to professional accounts - LinkedIn and Github - as well as a link which will open an email message to my email address. This will allow visitors to view additional information such as my career prior to tech, personal projects, and allow them to get in contact with me if they wish.
-
-### Component 2: Banners
-
-Each page includes a large banner beneath the navigation bar to inform the user what the content of the page will be.
-
-These banners draw attention partially because of their size. They are sized using view width and view height so they dominate the page no matter the size of the viewport.
-
-Furthermore, the banners are one of the few places where graphics are used on the website. This is done intentionally to draw the user's attention. The graphics used in the banners are futuristic designs which is an appropriate theme for a developer in the technology sector.
-
-### Component 3: CV Download
-
-Visitors to the website have the ability to download a PDF copy of my CV. This will allow them to incorporate my information into their file systems or show other relevant persons without needing to visit the website repeatedly.
-
-A CV download button exists at the bottom of the CV page. The link is large, bolded text which is the only text of its type on the page. A yellow hover using the same styling as the navigation bar hover signals to the user that it is interactable.
-
-The text "DOWNLOAD CV" takes the imperative voice as if a command, and this represents a call to action for the user.
-
-Lastly, the CV opens in a separate tab so the user does not lose their place on the website and can easily return (simply by clicking back to the tab) and continue engaging with the website.
-
-### Component 4: Accessibility
-
-Attention has been paid to the ability of visually-impaired individuals to use the website. This takes the form of providing alt-text for any images on the page, and ensuring that the contrast between elements on the page is high and does not use a colour scheme which would be a problem for color-blind visitors (e.g. red-green colour-blindness).
-
-Acessibility was checked using the Audit function built into the Google Chrome developer tools. Separate audits were conducted for all four webpages. Audit scores of 100 were attained for all webpages.
-
-![Accessibility](./docs/accessibility_score.jpg)
+My pdf resume opens in a different tab in the browser. This enables users to continue reading the content in the Experience webpage without losing their place.
 
 ### A Consistent Style
 
-All webpages use a consistent style, including components, fonts, colours, and themes:
-
-- The navigation bar, the banners with the name of the webpage, and the buttons to LinkedIn and Github are components which are on every page of the website.
-- The Poppins font is used for headers and Rubik is used for other text such as paragraphs. These sans-serif fonts were selected for their legibility and modern appearance.
-- The colour scheme of the website is blue with yellow accents and heavy use of whitespace.
-- Use of futuristic imagery in the banners of each page provide a unifying theme.
-- All banner images were tinted blue to conform to the colour theme of the website.
-
-### Semantic HTML
-
-HTML elements have been named to enhance the readability of the code. For example, HTML tags such as nav, p, and footer have been used and comments have been added to the HTML document to describe the meaning of each block of code.
-
-Additionally, the classes and id's used in CSS have been named in a way which is intended to enhance readability. For example the class 'flex-centered' includes the name 'flex' because it creates a flexbox using display: flex, and it centers the content which is childed to it using justify-content: center and align-items: center.
+All the webpages use a consistent design style, including components, fonts, and colors.
 
 ### Responsive Design
+The navigation bar and footer bar are designed to be responsive so that users with different mobile device are able to use the links and buttons easily.
 
-As visitors to the site may use a multitude of devices, the website has been designed to function well on screens of different sizes. 
-
-This has been accomplished by the use of CSS Flexbox, which allows control over the positioning of elements in response to a change in screen size. The website is designed to display correctly on a device as small as an iPhone 5/SE, which has a width of 320 pixels. When the screen width is over 900 pixels, the elements of the website no longer expand to fill the space, instead leaving whitespace on the left and right of the screen.
-
-By checking that components are displaying correctly on the smallest smartphones and wide screens such as desktop monitors, the website is viewable by the widest audience.
+For Experience and Skills webpage, I used flex cards to structure the contents including working experience, different category of personal skills and personality keywords. I have used media query to help change font size and width/height of different sections to make the pages display all components at desktop, mobile, and tablet viewport widths.
 
 ### Three Versions
 
-Three versions of the website have been produced and saved on different branches in Github. These versions are:
+Three versions of the website have been produced and saved on different branches in Github. The versions include:
 
 - 'master' branch with the base version
-- 'dark' branch with a dark colour scheme
-- 'no-graphics' branch with the banner graphics removed
+- 'color' branch with a dark colour scheme on homepage
+- 'font' branch with different fonts on homepage
 
-Alternate versions can be viewed by typing 'git checkout {branch-name}' in the terminal. For example to view the 'dark' branch, type:
+Alternate versions can be viewed by typing 'git checkout {branch-name}' in the terminal. To view the 'color' branch, type:
 
->git checkout dark
+>git checkout color
 
-### Subresource integrity
+To view the 'color' branch, type:
 
-Subresource integrity ensures that the files delivered to your web application do not have any unexpected content such as malicious code injected by a third party.
-
-This has been achieved by creating a hash using sha512 and using this hash as the value of the integrity attribute of our link tag. This ensures that styles.css will only load if it is identical to its state when the sha512 hash was created. If any changes have been made, the stylesheet will not be loaded and the HTML page will be displayed with no CSS styling.
+>git checkout font
 
 # Sitemap
 
 The website simply has all pages link to each other via the navigation bar. A sitemap for the website is presented below.
 
-![Sitemap](./docs/sitemap.jpg)
+![Sitemap](docs/Portfolio_Sitemap_new.png)
+
 
 # Screenshots
 
 ##### Home page
-![screenshot_home](./docs/screenshot_home.jpg)
+![screenshot_home](docs/screenshot/Screenshot_homepage_pc_1.png)
 
-##### Projects page
-![screenshot_projects](./docs/screenshot_projects.jpg)
+![screenshot_home](docs/screenshot/Screenshot_homepage_pc_2.png)
 
-##### CV page
-![screenshot_cv](./docs/screenshot_cv.jpg)
+##### Skill page
+![screenshot_projects](docs/screenshot/Screenshot_skill_pc_1.png)
+
+
+##### Blog page
+![screenshot_cv](docs/screenshot/Screenshot_blog_pc_1.png)
+
+![screenshot_cv](docs/screenshot/Screenshot_blog_pc_2.png)
 
 # Target audience
 
-The target audience for the website falls into two categories:
+The target audience for the website are:
 
-1. Employers
-2. Project Leads
+1. Project Leads
+2. People that have similar interests (e.g. cooking, painting, design etc.)
 
-The website is intended as a showcase of my abilities as a software developer and designer. The most likely use of the website is to provide as evidence of ability alongside a traditional application for employment. Additionally, employers or those leading other projects may chance upon the website and consider me for employment or inclusion in their projects.
+#### Tech stack
+- HTML is used for the content of all 5 webpages (Homepage, Experience, Skills, Blog and Chinese homepage).
+- CSS is used to style and strucutre the webpages.
 
-# Tech stack
+- JavaScript is used to achieve on scroll or on click effect in homepage and Blog webpage.
 
-- HTML is used for the content of all webpages
-- CSS is used for the styling and positioning of elements.
-- Netlify is used for web-hosting.
+- Netlify is used to deploy webpages.
 
 # Project Management
 
 ## Wireframes
-Wireframes were created for each page for mobile and desktop screen widths during the planning phase of the project. Considering that four HTML pages were required, this meant that eight wireframes were created in total. These are presented below.
+Wireframes were created for each page during the planning stage of the project. Wireframes are presented below. The tools that I used to create wireframes are Balsamic wireframes Desktop and Procreate app on ipad.
 
 ##### Homepage
-![wireframe_1](./docs/wireframe_home.jpg)
+![wireframe_1](docs/Homepage_wireframe.png)
 
-##### Projects
-![wireframe_2](./docs/wireframe_projects.jpg)
+##### Experience
+![wireframe_2](docs/Work_Wireframe.png)
 
-##### Blog
-![wireframe_3](./docs/wireframe_blog.jpg)
+##### Skill
+![wireframe_3](docs/Skill_Wireframe.png)
 
-#### CV
-![wireframe_4](./docs/wireframe_cv.jpg)
+#### Blog
+![wireframe_4](docs/Blog_Wireframe.png)
 
 ## Trello
 
-Tasks were tracked using Trello. A series of screenshots representing the timeline of the project are presented below.
+Tasks were tracked using Trello. Trello board screenshots presented below:
 
-##### Day 1 start (17/09/2019)
-![trello_1](./docs/trello_1.jpg)
+##### 1/04/2020
+![trello_4](docs/trello/Trelloboard_20200401.png)
 
-##### Day 2 start (18/09/2019)
-![trello_2](./docs/trello_2.jpg)
+##### 2/04/2020
+![trello_5](./docs/trello/Trelloboard.png)
 
-##### Day 4 start (20/09/2019)
-![trello_3](./docs/trello_3.jpg)
 
-##### Day 5 start (21/09/2019)
-![trello_4](./docs/trello_4.jpg)
 
-##### Day 6 just before submitting (22/09/2019)
-![trello_5](./docs/trello_5.jpg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
